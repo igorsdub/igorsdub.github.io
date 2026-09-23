@@ -1,6 +1,11 @@
 /* css styles */
 
-#title-block-header,
-.quarto-title-block {
+/* Hide title block only on the homepage where the custom profile column layout is used */
+body:has(.about-grid) #title-block-header,
+body:has(.about-grid) .quarto-title-block,
+body.page-home #title-block-header,
+body.page-home .quarto-title-block,
+.hide-title #title-block-header,
+.hide-title .quarto-title-block {
   display: none;
 }

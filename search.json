@@ -1,24 +1,73 @@
 [
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "beyond-lab.html",
+    "href": "beyond-lab.html",
+    "title": "Beyond Lab",
     "section": "",
-    "text": "I study molecular evolution with a focus on how proteins explore sequence space. My work combines genetic data, data-driven methods, and physics-based models to understand protein fitness landscapes and function. Earlier projects investigated protein dynamics and allostery through elastic network models."
+    "text": "A curated collection of books, albums, and cinema that inspire my curiosity, inform my perspective, and accompany life beyond the research bench and computing cluster."
   },
   {
-    "objectID": "research.html#selected-papers",
-    "href": "research.html#selected-papers",
-    "title": "Research",
-    "section": "Selected papers",
-    "text": "Selected papers\n\n\n\n\n\nOptimising Elastic Network Models for Protein Dynamics and Allostery: Spatial and Modal Cut-offs and Backbone Stiffness\n\n\nJournal of Molecular Biology, 434(17), 167696.\n\n\n\n\n\nSep 15, 2022\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\n\n\nComputational Analysis of Dynamic Allostery and Control in the SARS-CoV-2 Main Protease\n\n\nJournal of the Royal Society Interface, 18, 20200591.\n\n\n\n\n\nJan 6, 2021\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\nNo matching items"
+    "objectID": "beyond-lab.html#books",
+    "href": "beyond-lab.html#books",
+    "title": "Beyond Lab",
+    "section": "Books",
+    "text": "Books\n\n\n\n\n\n\n\nThe Selfish Gene\n\n\nRichard Dawkins\n\n\n\n\n\n\n\nGödel, Escher, Bach\n\n\nDouglas Hofstadter\n\n\n\n\n\n\n\nSICP\n\n\nAbelson & Sussman\n\n\n\n\n\n\n\nDune\n\n\nFrank Herbert\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "beyond-lab.html#music",
+    "href": "beyond-lab.html#music",
+    "title": "Beyond Lab",
+    "section": "Music",
+    "text": "Music\n\n\n\n\n\n\n\nKid A\n\n\nRadiohead\n\n\n\n\n\n\n\nSelected Ambient Works 85-92\n\n\nAphex Twin\n\n\n\n\n\n\n\nKind of Blue\n\n\nMiles Davis\n\n\n\n\n\n\n\nDiscovery\n\n\nDaft Punk\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "beyond-lab.html#movies",
+    "href": "beyond-lab.html#movies",
+    "title": "Beyond Lab",
+    "section": "Movies",
+    "text": "Movies\n\n\n\n\n\n\n\n2001: A Space Odyssey\n\n\nStanley Kubrick\n\n\n\n\n\n\n\nBlade Runner 2049\n\n\nDenis Villeneuve\n\n\n\n\n\n\n\nStalker\n\n\nAndrei Tarkovsky\n\n\n\n\n\n\n\nSpirited Away\n\n\nHayao Miyazaki\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
+    "href": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
+    "title": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults",
+    "section": "",
+    "text": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults\nQuarto’s built-in about: template: trestles and listing: type: grid generate full-width Bootstrap containers and heavy boxed cards that conflict with the minimalist aesthetic of gchure.bio and brianhie.com/bookshelf. We decided to constrain the entire site layout (navbar, main content, and footer) to a single centered column (max-width: 740px) via custom.scss and render the Beyond Lab shelves using a stripped-down custom EJS listing template (files/includes/shelf.ejs) rather than Quarto’s default grid cards. This keeps YAML data authoring simple (books.yml, music.yml, movies.yml) while enforcing clean medium-specific proportions (2:3 Standing Books and Movie Posters, 1:1 Album Squares) with zero visual bloat."
+  },
+  {
+    "objectID": "plan.html",
+    "href": "plan.html",
+    "title": "Website Redesign Plan (gchure.bio × brianhie.com)",
+    "section": "",
+    "text": "Reference: GitHub Issue #1\n\n\nTransform the personal academic website of Igors Dubanevics into a clean, minimalist, human-centered portfolio inspired by: - Griffin Chure (gchure.bio): Centered narrow column (max-width: 740px), crisp monochrome typography (Geist / Geist Mono), left profile column with photo, circular social links, and experience list, paired with an evocative 4-photo snapshot strip. - Brian Hie (brianhie.com/bookshelf): Stripped-down aesthetic shelves displaying personal culture (books, music, movies) using a clean 4-column hairline grid. - Dr. Gang He’s Quarto Academic Template: Solid academic foundation with structured listings, publications, and teaching entries.\n\n\n\n\n\nPhase 1: Implementation Planning & Issue #1 Specification\n\nEstablish design requirements: 740px container, Geist typography, clean navigation, profile column, and multi-media shelf.\n\nPhase 2: Configuration & Workflow Updates\n\nUpdate _quarto.yml: remove duplicate brand title, streamline navbar right to GitHub source repository, add Beyond Lab nav item, update footer attribution and HTML theme (cosmo + custom.scss).\nUpdate .github/workflows/publish.yml: set tinytex: false for ultra-fast GitHub Pages deployments.\n\nPhase 3: Minimalist Styling System (custom.scss & styles.css)\n\nDefine SCSS defaults: Geist + Geist Mono font imports, typography variables, monochrome color palette.\nConstrain .navbar-container, #quarto-content, and .nav-footer to max-width: 740px.\nImplement .about-grid, .profile-section, .social-button, and .experience-section styles.\nImplement .snapshot-strip 4-image grid below the homepage bio.\nImplement .shelf-grid, .shelf-cell, and .shelf-cover-wrap with aspect ratios (2:3 for books/movies, 1:1 for music).\nScope title block suppression so only index.qmd hides the header block while subpages display clean page titles.\n\nPhase 4: Homepage Profile & Snapshot Redesign (index.qmd)\n\nReplace Trestles about layout with custom two-column .about-grid.\nLeft column: Portrait image, circular social icons (GitHub, Google Scholar, ORCID, LinkedIn), and education/experience timeline.\nRight column: Bio narrative detailing research in molecular evolution, fitness landscapes, and scientific computing.\nBottom: Responsive 4-photo snapshot strip.\n\nPhase 5: Beyond Lab Media Shelves (beyond-lab.qmd)\n\nCustom EJS listing template (files/includes/shelf.ejs).\nLocal artwork covers in files/images/shelf/ to guarantee zero broken external links.\nStructured YAML data files: data/books.yml, data/music.yml, and data/movies.yml.\nCurated initial items across literature, science, cinema, and music.\n\nPhase 6: Verification & Polish\n\nRender full site with quarto render and verify build status.\nInspect responsiveness and layout integrity."
+  },
+  {
+    "objectID": "plan.html#vision-architecture",
+    "href": "plan.html#vision-architecture",
+    "title": "Website Redesign Plan (gchure.bio × brianhie.com)",
+    "section": "",
+    "text": "Transform the personal academic website of Igors Dubanevics into a clean, minimalist, human-centered portfolio inspired by: - Griffin Chure (gchure.bio): Centered narrow column (max-width: 740px), crisp monochrome typography (Geist / Geist Mono), left profile column with photo, circular social links, and experience list, paired with an evocative 4-photo snapshot strip. - Brian Hie (brianhie.com/bookshelf): Stripped-down aesthetic shelves displaying personal culture (books, music, movies) using a clean 4-column hairline grid. - Dr. Gang He’s Quarto Academic Template: Solid academic foundation with structured listings, publications, and teaching entries."
+  },
+  {
+    "objectID": "plan.html#roadmap-milestones",
+    "href": "plan.html#roadmap-milestones",
+    "title": "Website Redesign Plan (gchure.bio × brianhie.com)",
+    "section": "",
+    "text": "Phase 1: Implementation Planning & Issue #1 Specification\n\nEstablish design requirements: 740px container, Geist typography, clean navigation, profile column, and multi-media shelf.\n\nPhase 2: Configuration & Workflow Updates\n\nUpdate _quarto.yml: remove duplicate brand title, streamline navbar right to GitHub source repository, add Beyond Lab nav item, update footer attribution and HTML theme (cosmo + custom.scss).\nUpdate .github/workflows/publish.yml: set tinytex: false for ultra-fast GitHub Pages deployments.\n\nPhase 3: Minimalist Styling System (custom.scss & styles.css)\n\nDefine SCSS defaults: Geist + Geist Mono font imports, typography variables, monochrome color palette.\nConstrain .navbar-container, #quarto-content, and .nav-footer to max-width: 740px.\nImplement .about-grid, .profile-section, .social-button, and .experience-section styles.\nImplement .snapshot-strip 4-image grid below the homepage bio.\nImplement .shelf-grid, .shelf-cell, and .shelf-cover-wrap with aspect ratios (2:3 for books/movies, 1:1 for music).\nScope title block suppression so only index.qmd hides the header block while subpages display clean page titles.\n\nPhase 4: Homepage Profile & Snapshot Redesign (index.qmd)\n\nReplace Trestles about layout with custom two-column .about-grid.\nLeft column: Portrait image, circular social icons (GitHub, Google Scholar, ORCID, LinkedIn), and education/experience timeline.\nRight column: Bio narrative detailing research in molecular evolution, fitness landscapes, and scientific computing.\nBottom: Responsive 4-photo snapshot strip.\n\nPhase 5: Beyond Lab Media Shelves (beyond-lab.qmd)\n\nCustom EJS listing template (files/includes/shelf.ejs).\nLocal artwork covers in files/images/shelf/ to guarantee zero broken external links.\nStructured YAML data files: data/books.yml, data/music.yml, and data/movies.yml.\nCurated initial items across literature, science, cinema, and music.\n\nPhase 6: Verification & Polish\n\nRender full site with quarto render and verify build status.\nInspect responsiveness and layout integrity."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Igors Dubanevics",
     "section": "",
-    "text": "I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.\nMy earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the Good Enough Computing in Science course."
+    "text": "&lt;a href=\"https://github.com/igorsdub\" class=\"social-button\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"GitHub\"&gt;&lt;i class=\"bi bi-github\"&gt;&lt;/i&gt;&lt;/a&gt;\n&lt;a href=\"https://scholar.google.com/citations?user=yFwC3oIAAAAJ&hl=en\" class=\"social-button\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Google Scholar\"&gt;&lt;i class=\"ai ai-google-scholar\"&gt;&lt;/i&gt;&lt;/a&gt;\n&lt;a href=\"https://orcid.org/0000-0002-9989-6649\" class=\"social-button\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"ORCID\"&gt;&lt;i class=\"ai ai-orcid\"&gt;&lt;/i&gt;&lt;/a&gt;\n&lt;a href=\"https://www.linkedin.com/in/igorsdub/\" class=\"social-button\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LinkedIn\"&gt;&lt;i class=\"bi bi-linkedin\"&gt;&lt;/i&gt;&lt;/a&gt;\n\n\n&lt;div class=\"experience-header\"&gt;Experience&lt;/div&gt;\n\n&lt;div class=\"experience-item\"&gt;\n  &lt;div class=\"experience-years\"&gt;2021 — PRESENT&lt;/div&gt;\n  &lt;div class=\"experience-role\"&gt;PhD Candidate in Evolutionary Biology&lt;/div&gt;\n  &lt;div class=\"experience-place\"&gt;OIST (Okinawa, Japan)&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"experience-item\"&gt;\n  &lt;div class=\"experience-years\"&gt;PREVIOUS&lt;/div&gt;\n  &lt;div class=\"experience-role\"&gt;MSc &amp; Research in Protein Dynamics&lt;/div&gt;\n  &lt;div class=\"experience-place\"&gt;Molecular Evolution &amp; Allostery&lt;/div&gt;\n&lt;/div&gt;\n\n\n\n\nI am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.\n\n\nMy earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the Good Enough Computing in Science course.\n\n\nWhen away from the cluster and bench, I enjoy exploring books, music, and cinema—curated on Beyond Lab.\n\n\n\n\n\n\n&lt;img src=\"files/images/placeholder1.JPG\" alt=\"Okinawa snapshot 1\" loading=\"lazy\" /&gt;\n\n\n&lt;img src=\"files/images/placeholder2.JPG\" alt=\"Okinawa snapshot 2\" loading=\"lazy\" /&gt;\n\n\n&lt;img src=\"files/images/placeholder3.JPG\" alt=\"Okinawa snapshot 3\" loading=\"lazy\" /&gt;\n\n\n&lt;img src=\"files/images/placeholder4.jpg\" alt=\"Okinawa snapshot 4\" loading=\"lazy\" /&gt;"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Posts are coming soon.\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "teaching.html",
@@ -35,10 +84,31 @@
     "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "Posts are coming soon.\n\n\n\n\nNo matching items"
+    "text": "I study molecular evolution with a focus on how proteins explore sequence space. My work combines genetic data, data-driven methods, and physics-based models to understand protein fitness landscapes and function. Earlier projects investigated protein dynamics and allostery through elastic network models."
+  },
+  {
+    "objectID": "research.html#selected-papers",
+    "href": "research.html#selected-papers",
+    "title": "Research",
+    "section": "Selected papers",
+    "text": "Selected papers\n\n\n\n\n\nOptimising Elastic Network Models for Protein Dynamics and Allostery: Spatial and Modal Cut-offs and Backbone Stiffness\n\n\nJournal of Molecular Biology, 434(17), 167696.\n\n\n\n\n\nSep 15, 2022\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\n\n\nComputational Analysis of Dynamic Allostery and Control in the SARS-CoV-2 Main Protease\n\n\nJournal of the Royal Society Interface, 18, 20200591.\n\n\n\n\n\nJan 6, 2021\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "CONTEXT.html",
+    "href": "CONTEXT.html",
+    "title": "Personal Academic Website (igorsdub.github.io)",
+    "section": "",
+    "text": "Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto and styled after the minimalist centered-column aesthetic of Griffin Chure (gchure.bio) and the stripped-down shelf aesthetic of Brian Hie (brianhie.com/bookshelf).\n\n\nSnapshot Strip: A compact 3-to-4 image masonry grid on the homepage (index.qmd) displaying personal, academic, or Okinawa snapshots beneath the introductory bio. Avoid: Carousel, hero banner, photo gallery page\nBeyond Lab: The single non-academic curation page (beyond-lab.qmd) housing three distinct media shelves: Books, Music, and Movies. Avoid: Hobbies, blog categories, portfolio\nShelf: A stripped-down Quarto listing gallery within Beyond Lab dedicated to a single medium, where items sit on thin horizontal hairlines with zero Bootstrap card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage (index.qmd), modeled on gchure.bio/about, stacking the portrait photo (280px rounded frame), circular social handle icons (GitHub, Google Scholar, ORCID, LinkedIn), and a compact Geist Mono chronological list of academic experience/education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
+  },
+  {
+    "objectID": "CONTEXT.html#language",
+    "href": "CONTEXT.html#language",
+    "title": "Personal Academic Website (igorsdub.github.io)",
+    "section": "",
+    "text": "Snapshot Strip: A compact 3-to-4 image masonry grid on the homepage (index.qmd) displaying personal, academic, or Okinawa snapshots beneath the introductory bio. Avoid: Carousel, hero banner, photo gallery page\nBeyond Lab: The single non-academic curation page (beyond-lab.qmd) housing three distinct media shelves: Books, Music, and Movies. Avoid: Hobbies, blog categories, portfolio\nShelf: A stripped-down Quarto listing gallery within Beyond Lab dedicated to a single medium, where items sit on thin horizontal hairlines with zero Bootstrap card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage (index.qmd), modeled on gchure.bio/about, stacking the portrait photo (280px rounded frame), circular social handle icons (GitHub, Google Scholar, ORCID, LinkedIn), and a compact Geist Mono chronological list of academic experience/education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
   }
 ]

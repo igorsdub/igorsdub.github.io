@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Notes on research and scientific computing.">
 
-<title>Blog – Igors Dubanevics</title>
+<title>context – Igors Dubanevics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,8 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -76,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 <!-- 
 Load Academicons v1: https://jpswalsh.github.io/academicons/
@@ -126,42 +94,13 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Igors Dubanevics" href="blog.xml" data-external="1"><meta property="og:title" content="Blog – Igors Dubanevics">
-<meta property="og:description" content="Notes on research and scientific computing.">
+<meta property="og:title" content="Igors Dubanevics">
+<meta property="og:description" content="PhD candidate in evolutionary biology at OIST.">
 <meta property="og:site_name" content="Igors Dubanevics">
-<meta name="twitter:title" content="Blog – Igors Dubanevics">
-<meta name="twitter:description" content="Notes on research and scientific computing.">
+<meta name="twitter:title" content="Igors Dubanevics">
+<meta name="twitter:description" content="PhD candidate in evolutionary biology at OIST.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -191,7 +130,7 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -218,42 +157,27 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
-
-<div>
-  <div class="description">
-    Notes on research and scientific computing.
-  </div>
-</div>
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Posts are coming soon.</p>
-<div id="listing-listing" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
+
+<section id="personal-academic-website-igorsdub.github.io" class="level1">
+<h1>Personal Academic Website (<code>igorsdub.github.io</code>)</h1>
+<p>Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto and styled after the minimalist centered-column aesthetic of Griffin Chure (<code>gchure.bio</code>) and the stripped-down shelf aesthetic of Brian Hie (<code>brianhie.com/bookshelf</code>).</p>
+<section id="language" class="level2">
+<h2 class="anchored" data-anchor-id="language">Language</h2>
+<p><strong>Snapshot Strip</strong>: A compact 3-to-4 image masonry grid on the homepage (<code>index.qmd</code>) displaying personal, academic, or Okinawa snapshots beneath the introductory bio. <em>Avoid</em>: Carousel, hero banner, photo gallery page</p>
+<p><strong>Beyond Lab</strong>: The single non-academic curation page (<code>beyond-lab.qmd</code>) housing three distinct media shelves: Books, Music, and Movies. <em>Avoid</em>: Hobbies, blog categories, portfolio</p>
+<p><strong>Shelf</strong>: A stripped-down Quarto listing gallery within <code>Beyond Lab</code> dedicated to a single medium, where items sit on thin horizontal hairlines with zero Bootstrap card chrome. <em>Avoid</em>: Card grid, table, carousel</p>
+<p><strong>Standing Book</strong>: An entry on the Books shelf rendered with a vertical (<code>2:3</code> portrait) cover aspect ratio, title, and author. <em>Avoid</em>: Book post, book review article</p>
+<p><strong>Album Square</strong>: An entry on the Music shelf rendered with a square (<code>1:1</code> vinyl sleeve) artwork aspect ratio, album title, and artist. <em>Avoid</em>: Tracklist, audio player widget</p>
+<p><strong>Profile Column</strong>: The left-hand column on the homepage (<code>index.qmd</code>), modeled on <code>gchure.bio/about</code>, stacking the portrait photo (<code>280px</code> rounded frame), circular social handle icons (<code>GitHub</code>, <code>Google Scholar</code>, <code>ORCID</code>, <code>LinkedIn</code>), and a compact <code>Geist Mono</code> chronological list of academic experience/education. <em>Avoid</em>: Sidebar widget, full CV page</p>
+<p><strong>Movie Poster</strong>: An entry on the Movies shelf rendered with a vertical (<code>2:3</code> portrait film poster) aspect ratio, film title, director, and release year. <em>Avoid</em>: Widescreen video frame, video embed</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

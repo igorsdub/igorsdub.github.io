@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="100%" height="100%">
+  <rect width="200" height="300" fill="#1c1917"/>
+
+  <!-- Sepia murky Zone gradient -->
+  <linearGradient id="zone" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#292524"/>
+    <stop offset="60%" stop-color="#14532d"/>
+    <stop offset="100%" stop-color="#052e16"/>
+  </linearGradient>
+  <rect width="200" height="300" fill="url(#zone)" opacity="0.7"/>
+
+  <!-- Overgrown rail tracks disappearing into the mist -->
+  <line x1="85" y1="130" x2="20" y2="300" stroke="#78716c" stroke-width="1.5"/>
+  <line x1="115" y1="130" x2="180" y2="300" stroke="#78716c" stroke-width="1.5"/>
+  <line x1="82" y1="150" x2="118" y2="150" stroke="#57534e" stroke-width="1"/>
+  <line x1="75" y1="175" x2="125" y2="175" stroke="#57534e" stroke-width="1"/>
+  <line x1="65" y1="205" x2="135" y2="205" stroke="#57534e" stroke-width="1"/>
+  <line x1="50" y1="240" x2="150" y2="240" stroke="#57534e" stroke-width="1.2"/>
+  <line x1="30" y1="280" x2="170" y2="280" stroke="#57534e" stroke-width="1.5"/>
+
+  <text x="100" y="40" text-anchor="middle" fill="#a8a29e" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="7" letter-spacing="2">ANDREI TARKOVSKY</text>
+  <text x="100" y="65" text-anchor="middle" fill="#f5f5f4" font-family="-apple-system, BlinkMacSystemFont, 'Geist', sans-serif" font-weight="700" font-size="20" letter-spacing="4">STALKER</text>
+
+  <text x="100" y="288" text-anchor="middle" fill="#86efac" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="6.5" letter-spacing="1">MOSFILM • 1979</text>
+</svg>

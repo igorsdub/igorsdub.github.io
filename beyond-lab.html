@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Notes on research and scientific computing.">
+<meta name="description" content="Books, music, and cinema that inspire my thinking beyond the lab.">
 
-<title>Blog – Igors Dubanevics</title>
+<title>Beyond Lab – Igors Dubanevics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -79,20 +79,76 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-books-shelf .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-creator','listing-image','listing-medium_class','listing-note',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-creator","listing-image","listing-medium_class","listing-note"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-books-shelf'] = new List('listing-books-shelf', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-music-shelf .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-creator','listing-image','listing-medium_class','listing-note',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-creator","listing-image","listing-medium_class","listing-note"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-music-shelf'] = new List('listing-music-shelf', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-movies-shelf .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-creator','listing-image','listing-medium_class','listing-note',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-creator","listing-image","listing-medium_class","listing-note"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-movies-shelf'] = new List('listing-movies-shelf', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -157,12 +213,16 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Igors Dubanevics" href="blog.xml" data-external="1"><meta property="og:title" content="Blog – Igors Dubanevics">
-<meta property="og:description" content="Notes on research and scientific computing.">
+<meta property="og:title" content="Beyond Lab – Igors Dubanevics">
+<meta property="og:description" content="Books, music, and cinema that inspire my thinking beyond the lab.">
+<meta property="og:image" content="https://igorsdub.github.io/files/images/shelf/music-discovery.svg">
 <meta property="og:site_name" content="Igors Dubanevics">
-<meta name="twitter:title" content="Blog – Igors Dubanevics">
-<meta name="twitter:description" content="Notes on research and scientific computing.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:alt" content="Discovery">
+<meta name="twitter:title" content="Beyond Lab – Igors Dubanevics">
+<meta name="twitter:description" content="Books, music, and cinema that inspire my thinking beyond the lab.">
+<meta name="twitter:image" content="https://igorsdub.github.io/files/images/shelf/music-discovery.svg">
+<meta name="twitter:image:alt" content="Discovery">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -191,11 +251,11 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./beyond-lab.html"> 
+    <a class="nav-link active" href="./beyond-lab.html" aria-current="page"> 
 <span class="menu-text">Beyond Lab</span></a>
   </li>  
 </ul>
@@ -222,12 +282,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Beyond Lab</h1>
 </div>
 
 <div>
   <div class="description">
-    Notes on research and scientific computing.
+    Books, music, and cinema that inspire my thinking beyond the lab.
   </div>
 </div>
 
@@ -244,16 +304,166 @@ window.Quarto = {
 </header>
 
 
-<p>Posts are coming soon.</p>
-<div id="listing-listing" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-
+<p>A curated collection of books, albums, and cinema that inspire my curiosity, inform my perspective, and accompany life beyond the research bench and computing cluster.</p>
+<section id="books" class="level2">
+<h2 class="anchored" data-anchor-id="books">Books</h2>
+<div id="listing-books-shelf" class="quarto-listing quarto-listing-container-custom">
+<div class="shelf-grid">
+<div class="shelf-cell shelf-book" title="A foundational text on the gene-centric view of evolution and replicator dynamics.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-selfish-gene.svg" alt="The Selfish Gene" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+The Selfish Gene
+</h4>
+<p class="shelf-creator">
+Richard Dawkins
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="An exhilarating exploration of recursion, formal systems, self-reference, and cognition.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-geb.svg" alt="Gödel, Escher, Bach" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Gödel, Escher, Bach
+</h4>
+<p class="shelf-creator">
+Douglas Hofstadter
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="Structure and Interpretation of Computer Programs; programming as conceptual abstractions.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-sicp.svg" alt="SICP" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+SICP
+</h4>
+<p class="shelf-creator">
+Abelson &amp; Sussman
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A masterwork of ecological systems, politics, and evolutionary pressure on human civilization.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-dune.svg" alt="Dune" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Dune
+</h4>
+<p class="shelf-creator">
+Frank Herbert
+</p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="music" class="level2">
+<h2 class="anchored" data-anchor-id="music">Music</h2>
+<div id="listing-music-shelf" class="quarto-listing quarto-listing-container-custom">
+<div class="shelf-grid">
+<div class="shelf-cell shelf-music" title="Atmospheric, fractured, and visionary electronic art rock.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/music-kida.svg" alt="Kid A" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Kid A
+</h4>
+<p class="shelf-creator">
+Radiohead
+</p>
+</div>
+<div class="shelf-cell shelf-music" title="Timeless warmth, subtle rhythms, and ambient electronica perfection.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/music-saw.svg" alt="Selected Ambient Works 85-92" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Selected Ambient Works 85-92
+</h4>
+<p class="shelf-creator">
+Aphex Twin
+</p>
+</div>
+<div class="shelf-cell shelf-music" title="Peak modal jazz; space, stillness, and improvisation at their highest form.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/music-kind-of-blue.svg" alt="Kind of Blue" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Kind of Blue
+</h4>
+<p class="shelf-creator">
+Miles Davis
+</p>
+</div>
+<div class="shelf-cell shelf-music" title="Joyful, euphoric fusion of house, disco, and anime nostalgia.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/music-discovery.svg" alt="Discovery" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Discovery
+</h4>
+<p class="shelf-creator">
+Daft Punk
+</p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="movies" class="level2">
+<h2 class="anchored" data-anchor-id="movies">Movies</h2>
+<div id="listing-movies-shelf" class="quarto-listing quarto-listing-container-custom">
+<div class="shelf-grid">
+<div class="shelf-cell shelf-movie" title="A monumental cinematic meditation on human evolution, tools, and artificial intelligence.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/movie-2001.svg" alt="2001: A Space Odyssey" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+2001: A Space Odyssey
+</h4>
+<p class="shelf-creator">
+Stanley Kubrick
+</p>
+</div>
+<div class="shelf-cell shelf-movie" title="Breathtaking visual design and thoughtful questions of identity, memory, and humanity.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/movie-blade-runner-2049.svg" alt="Blade Runner 2049" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Blade Runner 2049
+</h4>
+<p class="shelf-creator">
+Denis Villeneuve
+</p>
+</div>
+<div class="shelf-cell shelf-movie" title="A poetic journey through the Zone exploring desire, faith, and mystery.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/movie-stalker.svg" alt="Stalker" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Stalker
+</h4>
+<p class="shelf-creator">
+Andrei Tarkovsky
+</p>
+</div>
+<div class="shelf-cell shelf-movie" title="An enchanting, richly textured fairy tale of courage, nature, and wonder.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/movie-spirited-away.svg" alt="Spirited Away" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Spirited Away
+</h4>
+<p class="shelf-creator">
+Hayao Miyazaki
+</p>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

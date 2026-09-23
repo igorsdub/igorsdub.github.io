@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="100%" height="100%">
+  <rect width="200" height="300" fill="#0f172a"/>
+  
+  <!-- Split atmosphere: Orange desert dust below, rainy cyan neon above -->
+  <linearGradient id="brgrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0284c7"/>
+    <stop offset="45%" stop-color="#0f172a"/>
+    <stop offset="55%" stop-color="#7c2d12"/>
+    <stop offset="100%" stop-color="#ea580c"/>
+  </linearGradient>
+  <rect width="200" height="300" fill="url(#brgrad)" opacity="0.85"/>
+
+  <!-- Colossal ruined statue silhouette and lone traveler -->
+  <polygon points="120,130 180,180 160,260 90,260 110,180" fill="#030712" opacity="0.6"/>
+  <!-- Figure -->
+  <line x1="60" y1="230" x2="60" y2="250" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+  <!-- Spinner headlights -->
+  <circle cx="50" cy="180" r="2.5" fill="#38bdf8"/>
+  <circle cx="56" cy="180" r="2.5" fill="#38bdf8"/>
+
+  <text x="100" y="38" text-anchor="middle" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="7" letter-spacing="2">DENIS VILLENEUVE</text>
+  <text x="100" y="60" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Geist', sans-serif" font-weight="700" font-size="14" letter-spacing="1">BLADE RUNNER 2049</text>
+
+  <text x="100" y="284" text-anchor="middle" fill="#fed7aa" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="6.5" letter-spacing="1.5">MORE HUMAN THAN HUMAN • 2017</text>
+</svg>
