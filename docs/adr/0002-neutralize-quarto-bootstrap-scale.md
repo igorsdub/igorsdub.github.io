@@ -1,0 +1,3 @@
+# 0002. Neutralize Quarto Bootstrap Typography and Grid Scale Instead of Migrating to Astro
+
+Quarto's `cosmo` Bootstrap theme defaults to `$font-size-base: 1.1rem` (`~17.6px`) and injects multi-column `.page-columns` CSS Grid rules when `page-layout: full` is enabled, causing text and container widths to appear inflated compared to `gchure.bio`'s `15px` Astro stylesheet. We decided to remain on Quarto to preserve native `.qmd` scientific authoring and YAML listings, while explicitly setting `$font-size-base: 0.9375rem` (`15px`) in `custom.scss`, constraining the centered column to `max-width: 680px`, and wrapping raw HTML components in `index.qmd` inside explicit `{=html}` blocks so Pandoc never mistakes indented tags for `<pre><code>` blocks.
