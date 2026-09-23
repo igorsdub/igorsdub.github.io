@@ -48,20 +48,5 @@ toc: false
     <p>When away from the cluster and bench, I enjoy exploring books, music, and cinema—curated on <a href="personal.html">Personal</a>.</p>
   </div>
 </div>
-
-<!-- Snapshot Strip: Easily swap or update the 4 image sources below -->
-<div class="snapshot-strip">
-  <div class="snapshot-item">
-    <img src="files/images/placeholder1.JPG" alt="Okinawa snapshot 1" loading="lazy" />
-  </div>
-  <div class="snapshot-item">
-    <img src="files/images/placeholder2.JPG" alt="Okinawa snapshot 2" loading="lazy" />
-  </div>
-  <div class="snapshot-item">
-    <img src="files/images/placeholder3.JPG" alt="Okinawa snapshot 3" loading="lazy" />
-  </div>
-  <div class="snapshot-item">
-    <img src="files/images/placeholder4.jpg" alt="Okinawa snapshot 4" loading="lazy" />
-  </div>
-</div>
 ```
+
