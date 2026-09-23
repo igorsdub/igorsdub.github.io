@@ -109,8 +109,18 @@ main p a:not(.btn):not(.social-button) {
   justify-content: center;
   text-align: center;
 
+  .nav-footer-left,
+  .nav-footer-right {
+    display: none !important;
+  }
+
   .nav-footer-center {
     text-align: center;
+
+    p {
+      display: inline;
+      margin: 0;
+    }
   }
 
   a {
