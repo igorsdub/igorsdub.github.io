@@ -6,7 +6,7 @@ $font-family-monospace: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monac
 $body-bg: #ffffff;
 $body-color: #171717;
 $link-color: #171717;
-$font-size-base: 0.9375rem;
+$font-size-base: 0.75rem;
 $line-height-base: 1.5;
 
 /*-- scss:rules --*/
@@ -16,19 +16,21 @@ html {
 }
 
 body {
-  font-size: 15px;
+  font-size: 12px !important;
   line-height: 1.5;
   font-weight: 400;
 }
 
-// Centered narrow column layout (gchure.bio style)
+// Ultra-compact centered narrow column layout (580px)
 .navbar-container,
 #quarto-content,
 .nav-footer {
-  max-width: 680px !important;
-  margin: 0 auto !important;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  width: calc(100% - 2.5rem) !important;
+  max-width: 580px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 #quarto-content.page-columns,
@@ -45,36 +47,84 @@ main.content {
   padding: 0 !important;
 }
 
-// Clean minimal navbar
+// Always-inline single-line minimal navbar (clipped to 580px column)
+#quarto-header > nav.navbar,
 .navbar {
   background: #ffffff !important;
-  border-bottom: 1px solid #e5e5e5;
-  padding-top: 0.85rem;
-  padding-bottom: 0.85rem;
+  border-bottom: none !important;
+  padding: 0 !important;
 }
 
+.navbar > .navbar-container,
+.navbar-container.container-fluid {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.navbar .navbar-container > .navbar-brand-container,
+.navbar-brand-container.mx-auto,
 .navbar-brand-container {
   margin-left: 0 !important;
   margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .navbar-brand {
   font-family: $font-family-monospace;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 400;
   color: #171717 !important;
   letter-spacing: 0.03em;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: nowrap;
+}
+
+.navbar-toggler {
+  display: none !important;
+}
+
+.navbar-collapse,
+#navbarCollapse {
+  display: flex !important;
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  width: auto !important;
+  margin-left: auto !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  gap: 1rem;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 !important;
 }
 
 .navbar-nav .nav-link {
   font-family: $font-family-monospace;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.66rem;
   letter-spacing: 0.03em;
   color: #737373 !important;
   transition: color 0.15s ease;
-  padding-left: 0.65rem !important;
-  padding-right: 0.65rem !important;
+  padding: 0 !important;
+  white-space: nowrap;
 
   &:hover,
   &.active {
@@ -82,10 +132,24 @@ main.content {
   }
 }
 
+@media (max-width: 520px) {
+  .navbar-brand {
+    font-size: 0.64rem;
+  }
+
+  .navbar-nav {
+    gap: 0.6rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.58rem;
+  }
+}
+
 // Inline links in prose
-main p a:not(.btn):not(.social-button) {
+main p a:not(.btn):not(.social-button):not(.pub-link) {
   font-family: $font-family-monospace;
-  font-size: 0.9em;
+  font-size: 0.92em;
   color: #171717;
   border-bottom: 1px solid #d4d4d4;
   text-decoration: none;
@@ -96,18 +160,24 @@ main p a:not(.btn):not(.social-button) {
   }
 }
 
-// Footer styling
+// Footer styling (clipped to 580px column)
+footer.footer {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .nav-footer {
   border-top: 1px solid #e5e5e5;
-  padding-top: 1.75rem;
-  padding-bottom: 2.25rem;
-  margin-top: 3.5rem;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.75rem !important;
+  margin-top: 2.25rem !important;
   font-family: $font-family-monospace;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: #a3a3a3;
   display: flex;
   justify-content: center;
   text-align: center;
+  min-height: 0 !important;
 
   .nav-footer-left,
   .nav-footer-right {
@@ -116,6 +186,7 @@ main p a:not(.btn):not(.social-button) {
 
   .nav-footer-center {
     text-align: center;
+    min-height: 0 !important;
 
     p {
       display: inline;
@@ -134,65 +205,77 @@ main p a:not(.btn):not(.social-button) {
   }
 }
 
-// Headings
+// Headings & prose paragraphs
 h1.title,
 h1 {
   font-family: $font-family-monospace;
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin-top: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-top: 1.15rem;
+  margin-bottom: 0.8rem;
   color: #171717;
+  text-align: left !important;
+}
+
+.quarto-title .description {
+  display: none !important;
 }
 
 h2 {
-  font-size: 1.05rem;
+  font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: -0.01em;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.55rem;
 }
 
 h3 {
-  font-size: 0.95rem;
+  font-size: 0.76rem;
   font-weight: 500;
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
 }
 
-// Homepage: Two-column profile layout (gchure.bio/about)
+main p {
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: #525252;
+  margin-bottom: 0.75rem;
+}
+
+// Homepage: Ultra-compact two-column profile layout
 .about-grid {
   display: flex;
-  gap: 2.25rem;
+  gap: 1.75rem;
   align-items: flex-start;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
-    gap: 1.75rem;
+    gap: 1.25rem;
   }
 }
 
 .profile-section {
-  width: 240px;
+  width: 180px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     width: 100%;
-    max-width: 260px;
+    max-width: 190px;
   }
 }
 
 .about-image {
   width: 100%;
-  max-width: 240px;
+  max-width: 180px;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
   display: block;
@@ -200,14 +283,14 @@ h3 {
 
 .social-links {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   justify-content: center;
-  margin-top: 0.85rem;
+  margin-top: 0.65rem;
 }
 
 .social-button {
-  width: 34px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1px solid #e5e5e5;
   display: inline-flex;
@@ -215,7 +298,7 @@ h3 {
   justify-content: center;
   color: #737373 !important;
   text-decoration: none !important;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   transition: all 0.15s ease;
 
   &:hover {
@@ -231,22 +314,22 @@ h3 {
 }
 
 .experience-section {
-  margin-top: 1.25rem;
+  margin-top: 0.95rem;
   width: 100%;
   text-align: left;
 }
 
 .experience-header {
   font-family: $font-family-monospace;
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #a3a3a3;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.45rem;
 }
 
 .experience-item {
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.45rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -255,35 +338,37 @@ h3 {
 
 .experience-years {
   font-family: $font-family-monospace;
-  font-size: 0.64rem;
+  font-size: 0.58rem;
   color: #a3a3a3;
 }
 
 .experience-role {
-  font-size: 0.74rem;
+  font-size: 0.66rem;
   color: #171717;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .experience-place {
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   color: #737373;
 }
 
 .bio-content {
   flex: 1;
-  font-size: 0.9rem;
-  line-height: 1.68;
+  font-size: 0.75rem;
+  line-height: 1.55;
   color: #525252;
   text-align: justify;
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     text-align: left;
   }
 
   p {
-    margin-bottom: 1.15rem;
+    font-size: 0.75rem;
+    line-height: 1.55;
+    margin-bottom: 0.85rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -291,44 +376,77 @@ h3 {
   }
 }
 
-// Homepage: Snapshot Strip
-.snapshot-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+// Research page: Compact left-bordered publications (gchure.bio/research style)
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 0.6rem;
+}
 
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(2, 1fr);
+.pub-item {
+  border-left: 2px solid #e5e5e5;
+  padding-left: 0.85rem;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-left-color: #171717;
   }
 }
 
-.snapshot-item {
-  height: 150px;
-  border-radius: 8px;
-  border: 1px solid #e5e5e5;
-  overflow: hidden;
+.pub-link {
+  display: block;
+  text-decoration: none !important;
+  border-bottom: none !important;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.25s ease;
-
-    &:hover {
-      transform: scale(1.03);
-    }
+  &:hover .pub-title {
+    text-decoration: underline;
   }
+}
+
+.pub-date {
+  font-family: $font-family-monospace;
+  font-size: 0.62rem;
+  color: #a3a3a3;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 0.18rem;
+}
+
+.pub-title {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.35;
+  margin-bottom: 0.18rem;
+}
+
+.pub-authors {
+  font-size: 0.72rem;
+  color: #737373;
+  line-height: 1.35;
+  margin-bottom: 0.15rem;
+
+  .emphasized-author {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #171717;
+  }
+}
+
+.pub-journal {
+  font-family: $font-family-monospace;
+  font-size: 0.64rem;
+  color: #a3a3a3;
+  letter-spacing: 0.02em;
 }
 
 // Personal Shelf Grid & Items
 .shelf-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem 1rem;
-  margin-bottom: 2.5rem;
+  gap: 1rem 0.85rem;
+  margin-bottom: 2rem;
 
   @media (max-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
@@ -337,7 +455,7 @@ h3 {
 
 .shelf-cell {
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 0.85rem;
+  padding-bottom: 0.7rem;
   display: flex;
   flex-direction: column;
 
@@ -355,7 +473,7 @@ h3 {
   border-radius: 4px;
   border: 1px solid #e5e5e5;
   overflow: hidden;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.45rem;
   background-color: #f7f7f7;
 
   p {
@@ -378,27 +496,16 @@ h3 {
 }
 
 .shelf-title {
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   font-weight: 500;
   color: #171717;
   line-height: 1.25;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0.15rem 0;
 }
 
 .shelf-creator {
   font-family: $font-family-monospace;
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   color: #737373;
   margin: 0;
-}
-
-// Section headers on Personal
-.shelf-section-title {
-  font-family: $font-family-sans-serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #171717;
 }
