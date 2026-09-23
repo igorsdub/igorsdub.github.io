@@ -6,27 +6,30 @@ $font-family-monospace: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monac
 $body-bg: #ffffff;
 $body-color: #171717;
 $link-color: #171717;
-$font-size-base: 0.75rem;
+$font-size-base: 0.9rem;
 $line-height-base: 1.5;
 
 /*-- scss:rules --*/
 
 html {
   font-size: 16px;
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
 }
 
 body {
-  font-size: 12px !important;
-  line-height: 1.5;
+  padding-top: 50px !important;
+  font-size: 14.5px !important;
+  line-height: 1.55;
   font-weight: 400;
 }
 
-// Ultra-compact centered narrow column layout (580px)
+// Compact centered narrow column layout (680px)
 .navbar-container,
 #quarto-content,
 .nav-footer {
   width: calc(100% - 2.5rem) !important;
-  max-width: 580px !important;
+  max-width: 680px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 0 !important;
@@ -38,6 +41,8 @@ body {
 #quarto-content .page-columns {
   display: block !important;
   grid-template-columns: none !important;
+  min-height: 0 !important;
+  height: auto !important;
 }
 
 #quarto-document-content,
@@ -47,12 +52,25 @@ main.content {
   padding: 0 !important;
 }
 
-// Always-inline single-line minimal navbar (clipped to 580px column)
+// Always-inline single-line minimal navbar locked at 50px (clipped to 680px column)
+#quarto-header {
+  height: 50px !important;
+  min-height: 50px !important;
+  max-height: 50px !important;
+  box-sizing: border-box !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 #quarto-header > nav.navbar,
 .navbar {
   background: #ffffff !important;
   border-bottom: none !important;
   padding: 0 !important;
+  height: 50px !important;
+  min-height: 50px !important;
+  max-height: 50px !important;
+  box-sizing: border-box !important;
 }
 
 .navbar > .navbar-container,
@@ -63,8 +81,12 @@ main.content {
   align-items: center !important;
   justify-content: space-between !important;
   border-bottom: 1px solid #e5e5e5;
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
+  height: 50px !important;
+  min-height: 50px !important;
+  max-height: 50px !important;
+  box-sizing: border-box !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .navbar .navbar-container > .navbar-brand-container,
@@ -80,7 +102,7 @@ main.content {
 
 .navbar-brand {
   font-family: $font-family-monospace;
-  font-size: 0.72rem;
+  font-size: 0.86rem;
   font-weight: 400;
   color: #171717 !important;
   letter-spacing: 0.03em;
@@ -119,7 +141,7 @@ main.content {
 .navbar-nav .nav-link {
   font-family: $font-family-monospace;
   text-transform: uppercase;
-  font-size: 0.66rem;
+  font-size: 0.78rem;
   letter-spacing: 0.03em;
   color: #737373 !important;
   transition: color 0.15s ease;
@@ -134,15 +156,15 @@ main.content {
 
 @media (max-width: 520px) {
   .navbar-brand {
-    font-size: 0.64rem;
+    font-size: 0.75rem;
   }
 
   .navbar-nav {
-    gap: 0.6rem;
+    gap: 0.65rem;
   }
 
   .navbar-nav .nav-link {
-    font-size: 0.58rem;
+    font-size: 0.68rem;
   }
 }
 
@@ -160,7 +182,7 @@ main p a:not(.btn):not(.social-button):not(.pub-link) {
   }
 }
 
-// Footer styling (clipped to 580px column)
+// Footer styling (clipped to 680px column)
 footer.footer {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -168,16 +190,17 @@ footer.footer {
 
 .nav-footer {
   border-top: 1px solid #e5e5e5;
-  padding-top: 1.25rem !important;
-  padding-bottom: 1.75rem !important;
-  margin-top: 2.25rem !important;
+  padding-top: 1.15rem !important;
+  padding-bottom: 1.25rem !important;
+  margin-top: 1.75rem !important;
   font-family: $font-family-monospace;
-  font-size: 0.6rem;
+  font-size: 0.72rem;
   color: #a3a3a3;
   display: flex;
   justify-content: center;
   text-align: center;
   min-height: 0 !important;
+  height: auto !important;
 
   .nav-footer-left,
   .nav-footer-right {
@@ -210,11 +233,11 @@ h1.title,
 h1 {
   font-family: $font-family-monospace;
   text-transform: uppercase;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin-top: 1.15rem;
-  margin-bottom: 0.8rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.85rem;
   color: #171717;
   text-align: left !important;
 }
@@ -224,28 +247,28 @@ h1 {
 }
 
 h2 {
-  font-size: 0.82rem;
+  font-size: 0.98rem;
   font-weight: 500;
   letter-spacing: -0.01em;
-  margin-top: 1.2rem;
-  margin-bottom: 0.55rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
 }
 
 h3 {
-  font-size: 0.76rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  margin-top: 0.9rem;
-  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.45rem;
 }
 
 main p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   line-height: 1.55;
   color: #525252;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
-// Homepage: Ultra-compact two-column profile layout
+// Homepage: Two-column profile layout
 .about-grid {
   display: flex;
   gap: 1.75rem;
@@ -261,7 +284,7 @@ main p {
 }
 
 .profile-section {
-  width: 180px;
+  width: 215px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -269,13 +292,13 @@ main p {
 
   @media (max-width: 600px) {
     width: 100%;
-    max-width: 190px;
+    max-width: 215px;
   }
 }
 
 .about-image {
   width: 100%;
-  max-width: 180px;
+  max-width: 215px;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
   display: block;
@@ -289,8 +312,8 @@ main p {
 }
 
 .social-button {
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   border: 1px solid #e5e5e5;
   display: inline-flex;
@@ -298,7 +321,7 @@ main p {
   justify-content: center;
   color: #737373 !important;
   text-decoration: none !important;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   transition: all 0.15s ease;
 
   &:hover {
@@ -321,7 +344,7 @@ main p {
 
 .experience-header {
   font-family: $font-family-monospace;
-  font-size: 0.6rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #a3a3a3;
@@ -338,25 +361,25 @@ main p {
 
 .experience-years {
   font-family: $font-family-monospace;
-  font-size: 0.58rem;
+  font-size: 0.7rem;
   color: #a3a3a3;
 }
 
 .experience-role {
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   color: #171717;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .experience-place {
-  font-size: 0.62rem;
+  font-size: 0.74rem;
   color: #737373;
 }
 
 .bio-content {
   flex: 1;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   line-height: 1.55;
   color: #525252;
   text-align: justify;
@@ -366,9 +389,9 @@ main p {
   }
 
   p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     line-height: 1.55;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.9rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -406,7 +429,7 @@ main p {
 
 .pub-date {
   font-family: $font-family-monospace;
-  font-size: 0.62rem;
+  font-size: 0.74rem;
   color: #a3a3a3;
   letter-spacing: 0.03em;
   display: block;
@@ -414,7 +437,7 @@ main p {
 }
 
 .pub-title {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: #171717;
   line-height: 1.35;
@@ -422,7 +445,7 @@ main p {
 }
 
 .pub-authors {
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   color: #737373;
   line-height: 1.35;
   margin-bottom: 0.15rem;
@@ -436,7 +459,7 @@ main p {
 
 .pub-journal {
   font-family: $font-family-monospace;
-  font-size: 0.64rem;
+  font-size: 0.76rem;
   color: #a3a3a3;
   letter-spacing: 0.02em;
 }
@@ -496,7 +519,7 @@ main p {
 }
 
 .shelf-title {
-  font-size: 0.74rem;
+  font-size: 0.86rem;
   font-weight: 500;
   color: #171717;
   line-height: 1.25;
@@ -505,7 +528,7 @@ main p {
 
 .shelf-creator {
   font-family: $font-family-monospace;
-  font-size: 0.62rem;
+  font-size: 0.74rem;
   color: #737373;
   margin: 0;
 }
