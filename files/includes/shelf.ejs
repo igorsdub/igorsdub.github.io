@@ -1,0 +1,9 @@
+<div class="shelf-grid">
+<% for (const item of items) { %>
+<div class="shelf-cell <%= item.medium_class || 'shelf-book' %>" title="<%= item.note || '' %>">
+<div class="shelf-cover-wrap"><img src="<%- item.image %>" alt="<%- item.title %>" loading="lazy" /></div>
+<h4 class="shelf-title"><%= item.title %></h4>
+<p class="shelf-creator"><%= item.creator %></p>
+</div>
+<% } %>
+</div>

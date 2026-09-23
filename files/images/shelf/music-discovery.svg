@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <rect width="300" height="300" fill="#000000"/>
+
+  <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#fdba74"/>
+    <stop offset="25%" stop-color="#f472b6"/>
+    <stop offset="50%" stop-color="#a855f7"/>
+    <stop offset="75%" stop-color="#38bdf8"/>
+    <stop offset="100%" stop-color="#fbbf24"/>
+  </linearGradient>
+
+  <!-- Chrome Daft Punk typography -->
+  <g fill="url(#chrome)">
+    <text x="150" y="145" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Geist', sans-serif" font-weight="900" font-size="28" letter-spacing="1">DAFT PUNK</text>
+  </g>
+
+  <!-- Star glint -->
+  <polygon points="150,85 153,95 163,98 153,101 150,111 147,101 137,98 147,95" fill="#ffffff"/>
+  <polygon points="230,165 231,170 236,171 231,172 230,177 229,172 224,171 229,170" fill="#ffffff" opacity="0.8"/>
+
+  <text x="150" y="195" text-anchor="middle" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="12" letter-spacing="8">DISCOVERY</text>
+  <text x="150" y="270" text-anchor="middle" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="8" letter-spacing="1.5">VIRGIN RECORDS • 2001</text>
+</svg>

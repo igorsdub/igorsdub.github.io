@@ -1,0 +1,23 @@
+- title: "The Selfish Gene"
+  creator: "Richard Dawkins"
+  image: "files/images/shelf/book-selfish-gene.svg"
+  medium_class: "shelf-book"
+  note: "A foundational text on the gene-centric view of evolution and replicator dynamics."
+
+- title: "Gödel, Escher, Bach"
+  creator: "Douglas Hofstadter"
+  image: "files/images/shelf/book-geb.svg"
+  medium_class: "shelf-book"
+  note: "An exhilarating exploration of recursion, formal systems, self-reference, and cognition."
+
+- title: "SICP"
+  creator: "Abelson & Sussman"
+  image: "files/images/shelf/book-sicp.svg"
+  medium_class: "shelf-book"
+  note: "Structure and Interpretation of Computer Programs; programming as conceptual abstractions."
+
+- title: "Dune"
+  creator: "Frank Herbert"
+  image: "files/images/shelf/book-dune.svg"
+  medium_class: "shelf-book"
+  note: "A masterwork of ecological systems, politics, and evolutionary pressure on human civilization."

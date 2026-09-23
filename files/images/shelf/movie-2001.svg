@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="100%" height="100%">
+  <rect width="200" height="300" fill="#000000"/>
+
+  <!-- The Monolith -->
+  <rect x="75" y="110" width="50" height="110" fill="#0a0a0a" stroke="#262626" stroke-width="0.75"/>
+
+  <!-- HAL 9000 Eye -->
+  <circle cx="100" cy="85" r="16" fill="#171717" stroke="#404040" stroke-width="1.5"/>
+  <circle cx="100" cy="85" r="10" fill="#dc2626"/>
+  <circle cx="100" cy="85" r="4" fill="#fef08a"/>
+
+  <!-- Earth crescent rim at bottom -->
+  <path d="M -20 280 Q 100 240 220 280 L 200 300 L 0 300 Z" fill="#0284c7" opacity="0.4"/>
+
+  <text x="100" y="38" text-anchor="middle" fill="#a3a3a3" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="7" letter-spacing="2">STANLEY KUBRICK</text>
+  <text x="100" y="58" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Geist', sans-serif" font-weight="700" font-size="14" letter-spacing="1">2001: A SPACE ODYSSEY</text>
+
+  <text x="100" y="280" text-anchor="middle" fill="#737373" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="7" letter-spacing="1">THE ULTIMATE TRIP • 1968</text>
+</svg>
