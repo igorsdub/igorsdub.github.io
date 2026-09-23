@@ -1,8 +1,0 @@
----
-title: "Draft"
-description: ""
-date: "2026-08-13"
-draft: true
----
-
-This draft keeps the Blog collection ready for future posts.

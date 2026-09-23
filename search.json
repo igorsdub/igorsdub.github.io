@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "I study molecular evolution with a focus on how proteins explore sequence space. My work combines genetic data, data-driven methods, and physics-based models to understand protein fitness landscapes and function. Earlier projects investigated protein dynamics and allostery through elastic network models."
+  },
+  {
+    "objectID": "research.html#selected-papers",
+    "href": "research.html#selected-papers",
+    "title": "Research",
+    "section": "Selected papers",
+    "text": "Selected papers\n\n\n\n\n\nOptimising Elastic Network Models for Protein Dynamics and Allostery: Spatial and Modal Cut-offs and Backbone Stiffness\n\n\nJournal of Molecular Biology, 434(17), 167696.\n\n\n\n\n\nSep 15, 2022\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\n\n\nComputational Analysis of Dynamic Allostery and Control in the SARS-CoV-2 Main Protease\n\n\nJournal of the Royal Society Interface, 18, 20200591.\n\n\n\n\n\nJan 6, 2021\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Igors Dubanevics",
+    "section": "",
+    "text": "I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.\nMy earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the Good Enough Computing in Science course."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
+  },
+  {
+    "objectID": "teaching.html#good-enough-computing-in-science",
+    "href": "teaching.html#good-enough-computing-in-science",
+    "title": "Teaching",
+    "section": "",
+    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Posts are coming soon.\n\n\n\n\nNo matching items"
+  }
+]
