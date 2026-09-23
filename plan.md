@@ -1,11 +1,11 @@
 # Website Redesign Plan (`gchure.bio` × `brianhie.com`)
 
-*Reference: [GitHub Issue #1](https://github.com/igorsdub/igorsdub.github.io/issues/1)*
+*References: [GitHub Issue #1](https://github.com/igorsdub/igorsdub.github.io/issues/1), [GitHub Issue #2](https://github.com/igorsdub/igorsdub.github.io/issues/2)*
 
 ## Vision & Architecture
 
 Transform the personal academic website of **Igors Dubanevics** into a clean, minimalist, human-centered portfolio inspired by:
-- **[Griffin Chure (`gchure.bio`)](https://gchure.bio/)**: Centered narrow column (`max-width: 740px`), crisp monochrome typography (`Geist` / `Geist Mono`), left profile column with photo, circular social links, and experience list, paired with an evocative 4-photo snapshot strip.
+- **[Griffin Chure (`gchure.bio`)](https://gchure.bio/)**: Centered narrow column (`max-width: 680px`), crisp monochrome typography (`Geist` / `Geist Mono`), left profile column with photo, circular social links, and experience list, paired with an evocative 4-photo snapshot strip.
 - **[Brian Hie (`brianhie.com/bookshelf`)](https://brianhie.com/bookshelf)**: Stripped-down aesthetic shelves displaying personal culture (books, music, movies) using a clean 4-column hairline grid.
 - **[Dr. Gang He's Quarto Academic Template](https://github.com/drganghe/quarto-academic-website-template)**: Solid academic foundation with structured listings, publications, and teaching entries.
 
@@ -38,3 +38,9 @@ Transform the personal academic website of **Igors Dubanevics** into a clean, mi
 - [x] **Phase 6: Verification & Polish**
   - Render full site with `quarto render` and verify build status.
   - Inspect responsiveness and layout integrity.
+- [x] **Phase 7: Layout & Navbar Refinements (Issue #2)**
+  - Rename `beyond-lab.qmd` to `personal.qmd` and update navigation and page titles.
+  - Fix homepage HTML rendering by wrapping `index.qmd` markup inside a raw `{=html}` block and removing `page-layout: full`, eliminating rogue `<pre><code>` code wrappers around `.social-links`, `.experience-section`, and `.snapshot-strip`.
+  - Right-align navbar links (`Research`, `Teaching`, `Blog`, `Personal`), disable search bar (`search: false`), and implement an ultra-minimal single-line centered footer with project source link.
+  - Align typography and container scale to `gchure.bio`: base font size 15px (`$font-size-base: 0.9375rem;`), container width constrained to 680px, monospace uppercase navbar and headings, justified bio text, and compact experience items.
+  - Verify complete site build via `quarto render`.
