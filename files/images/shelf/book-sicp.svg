@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="100%" height="100%">
+  <rect width="200" height="300" fill="#311042"/>
+  <rect x="0" y="0" width="12" height="300" fill="#200a2c"/>
+  <line x1="12" y1="0" x2="12" y2="300" stroke="#4c1d6b" stroke-width="1"/>
+
+  <!-- Minimalist lambda and eval geometric emblem -->
+  <g stroke="#e9d5ff" stroke-width="1.8" fill="none" opacity="0.9">
+    <circle cx="100" cy="165" r="42" stroke="#a855f7" stroke-width="1"/>
+    <!-- Lambda symbol -->
+    <path d="M 85 190 L 105 140 M 96 163 L 115 190" stroke="#f3e8ff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <text x="30" y="46" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="8" letter-spacing="1.2">MIT ELECTRICAL ENG &amp; CS</text>
+  <text x="30" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Geist', sans-serif" font-weight="700" font-size="14" letter-spacing="-0.3">STRUCTURE &amp;</text>
+  <text x="30" y="88" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Geist', sans-serif" font-weight="700" font-size="14" letter-spacing="-0.3">INTERPRETATION</text>
+  <text x="30" y="106" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, 'Geist', sans-serif" font-weight="400" font-size="12" letter-spacing="-0.2">OF COMPUTER PROGRAMS</text>
+
+  <text x="30" y="265" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="7.5">Abelson &amp; Sussman</text>
+  <text x="30" y="277" fill="#7e22ce" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="7">THE MIT PRESS</text>
+</svg>

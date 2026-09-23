@@ -1,0 +1,35 @@
+---
+title: "Beyond Lab"
+description: "Books, music, and cinema that inspire my thinking beyond the lab."
+listing:
+  - id: books-shelf
+    contents: data/books.yml
+    template: files/includes/shelf.ejs
+    sort: false
+  - id: music-shelf
+    contents: data/music.yml
+    template: files/includes/shelf.ejs
+    sort: false
+  - id: movies-shelf
+    contents: data/movies.yml
+    template: files/includes/shelf.ejs
+    sort: false
+toc: false
+---
+
+A curated collection of books, albums, and cinema that inspire my curiosity, inform my perspective, and accompany life beyond the research bench and computing cluster.
+
+## Books
+
+:::{#books-shelf}
+:::
+
+## Music
+
+:::{#music-shelf}
+:::
+
+## Movies
+
+:::{#movies-shelf}
+:::

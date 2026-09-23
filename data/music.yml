@@ -1,0 +1,23 @@
+- title: "Kid A"
+  creator: "Radiohead"
+  image: "files/images/shelf/music-kida.svg"
+  medium_class: "shelf-music"
+  note: "Atmospheric, fractured, and visionary electronic art rock."
+
+- title: "Selected Ambient Works 85-92"
+  creator: "Aphex Twin"
+  image: "files/images/shelf/music-saw.svg"
+  medium_class: "shelf-music"
+  note: "Timeless warmth, subtle rhythms, and ambient electronica perfection."
+
+- title: "Kind of Blue"
+  creator: "Miles Davis"
+  image: "files/images/shelf/music-kind-of-blue.svg"
+  medium_class: "shelf-music"
+  note: "Peak modal jazz; space, stillness, and improvisation at their highest form."
+
+- title: "Discovery"
+  creator: "Daft Punk"
+  image: "files/images/shelf/music-discovery.svg"
+  medium_class: "shelf-music"
+  note: "Joyful, euphoric fusion of house, disco, and anime nostalgia."

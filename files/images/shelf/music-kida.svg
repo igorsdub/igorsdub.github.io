@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <rect width="300" height="300" fill="#09090b"/>
+  <!-- Glowing red sky gradient / backdrop -->
+  <radialGradient id="sky" cx="50%" cy="30%" r="60%">
+    <stop offset="0%" stop-color="#b91c1c"/>
+    <stop offset="70%" stop-color="#450a0a"/>
+    <stop offset="100%" stop-color="#09090b"/>
+  </radialGradient>
+  <rect width="300" height="180" fill="url(#sky)"/>
+
+  <!-- Jagged mountain ranges -->
+  <polygon points="0,170 45,100 90,165 140,85 195,170 245,110 300,180 300,300 0,300" fill="#18181b"/>
+  <polygon points="0,195 65,130 110,185 165,115 220,190 270,140 300,195 300,300 0,300" fill="#27272a"/>
+  <polygon points="30,220 85,160 135,215 190,150 250,225 300,180 300,300 0,300" fill="#f4f4f5" opacity="0.9"/>
+  <!-- Distorted pixel grid noise simulation -->
+  <line x1="0" y1="260" x2="300" y2="260" stroke="#ef4444" stroke-width="0.75" stroke-dasharray="2 3"/>
+  <line x1="0" y1="270" x2="300" y2="270" stroke="#ef4444" stroke-width="0.75" stroke-dasharray="4 2"/>
+
+  <text x="24" y="38" fill="#f4f4f5" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="12" font-weight="600" letter-spacing="2">RADIOHEAD</text>
+  <text x="24" y="56" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, 'Geist Mono', monospace" font-size="11" letter-spacing="3">KID A</text>
+</svg>

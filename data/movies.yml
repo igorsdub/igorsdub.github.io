@@ -1,0 +1,23 @@
+- title: "2001: A Space Odyssey"
+  creator: "Stanley Kubrick"
+  image: "files/images/shelf/movie-2001.svg"
+  medium_class: "shelf-movie"
+  note: "A monumental cinematic meditation on human evolution, tools, and artificial intelligence."
+
+- title: "Blade Runner 2049"
+  creator: "Denis Villeneuve"
+  image: "files/images/shelf/movie-blade-runner-2049.svg"
+  medium_class: "shelf-movie"
+  note: "Breathtaking visual design and thoughtful questions of identity, memory, and humanity."
+
+- title: "Stalker"
+  creator: "Andrei Tarkovsky"
+  image: "files/images/shelf/movie-stalker.svg"
+  medium_class: "shelf-movie"
+  note: "A poetic journey through the Zone exploring desire, faith, and mystery."
+
+- title: "Spirited Away"
+  creator: "Hayao Miyazaki"
+  image: "files/images/shelf/movie-spirited-away.svg"
+  medium_class: "shelf-movie"
+  note: "An enchanting, richly textured fairy tale of courage, nature, and wonder."
