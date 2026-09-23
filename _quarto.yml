@@ -1,0 +1,51 @@
+project:
+  type: website
+
+website:
+  title: "Igors Dubanevics"
+  description: "PhD candidate in evolutionary biology at OIST."
+  site-url: "https://igorsdub.github.io"
+  repo-url: "https://github.com/igorsdub/igorsdub.github.io"
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: "Igors Dubanevics"
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
+      - href: blog.qmd
+        text: Blog
+    right:
+      - icon: github
+        href: "https://github.com/igorsdub"
+        aria-label: GitHub
+        target: _blank
+      - text: "{{< ai google-scholar >}}"
+        href: "https://scholar.google.com/citations?user=yFwC3oIAAAAJ&hl=en"
+        aria-label: Google Scholar
+        target: _blank
+      - text: "{{< ai orcid >}}"
+        href: "https://orcid.org/0000-0002-9989-6649"
+        aria-label: ORCID
+        target: _blank
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/igorsdub/"
+        aria-label: LinkedIn
+        target: _blank
+  page-navigation: false
+  page-footer:
+    left: "Igors Dubanevics &copy; <script>document.write(new Date().getFullYear())</script>"
+    center: "Built with [Quarto](https://quarto.org) from a template adapted from [Dr. Gang He’s Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template)."
+  open-graph: true
+  twitter-card: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    include-in-header: "files/includes/_academic.qmd"

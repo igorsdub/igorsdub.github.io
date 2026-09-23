@@ -1,0 +1,17 @@
+---
+title: "Research"
+description: "Molecular evolution, protein fitness landscapes, and protein dynamics."
+listing:
+  contents: publications.yml
+  type: default
+  sort: "date desc"
+  fields: [title, author, date, description]
+  page-size: 100
+---
+
+I study molecular evolution with a focus on how proteins explore sequence space. My work combines genetic data, data-driven methods, and physics-based models to understand protein fitness landscapes and function. Earlier projects investigated protein dynamics and allostery through elastic network models.
+
+## Selected papers
+
+:::{#listing}
+:::

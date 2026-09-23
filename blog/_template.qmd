@@ -1,0 +1,8 @@
+---
+title: "Blog post title"
+description: "A short summary for the Blog listing."
+date: "2026-08-13"
+draft: true
+---
+
+Replace this draft with your first Blog post.

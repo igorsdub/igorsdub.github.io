@@ -1,0 +1,30 @@
+---
+title: "Igors Dubanevics"
+description: "PhD candidate in evolutionary biology at OIST."
+page-navigation: false
+toc: false
+page-layout: full
+about:
+  template: trestles
+  image: "files/images/igors-dubanevics.png"
+  image-width: 52%
+  links:
+    - icon: github
+      text: GitHub
+      href: "https://github.com/igorsdub"
+      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: "https://scholar.google.com/citations?user=yFwC3oIAAAAJ&hl=en"
+      target: _blank
+    - text: "{{< ai orcid >}} ORCID"
+      href: "https://orcid.org/0000-0002-9989-6649"
+      target: _blank
+    - icon: linkedin
+      text: LinkedIn
+      href: "https://www.linkedin.com/in/igorsdub/"
+      target: _blank
+---
+
+I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.
+
+My earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the [Good Enough Computing in Science](teaching.qmd) course.

@@ -1,0 +1,12 @@
+---
+title: "Teaching"
+description: "Good Enough Computing in Science (GECS)."
+---
+
+## Good Enough Computing in Science
+
+[Good Enough Computing in Science (GECS)](https://igorsdub.github.io/gecs/) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.
+
+The course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.
+
+[Visit the GECS course website →](https://igorsdub.github.io/gecs/){.btn .btn-primary target="_blank"}
