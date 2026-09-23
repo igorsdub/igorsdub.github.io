@@ -4,27 +4,67 @@ description: "PhD candidate in evolutionary biology at OIST."
 page-navigation: false
 toc: false
 page-layout: full
-about:
-  template: trestles
-  image: "files/images/igors-dubanevics.png"
-  image-width: 52%
-  links:
-    - icon: github
-      text: GitHub
-      href: "https://github.com/igorsdub"
-      target: _blank
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      href: "https://scholar.google.com/citations?user=yFwC3oIAAAAJ&hl=en"
-      target: _blank
-    - text: "{{< ai orcid >}} ORCID"
-      href: "https://orcid.org/0000-0002-9989-6649"
-      target: _blank
-    - icon: linkedin
-      text: LinkedIn
-      href: "https://www.linkedin.com/in/igorsdub/"
-      target: _blank
 ---
 
-I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.
+```{=html}
+<style>
+#title-block-header, .quarto-title-block {
+  display: none !important;
+}
+</style>
+```
 
-My earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the [Good Enough Computing in Science](teaching.qmd) course.
+<div class="about-grid">
+
+<div class="profile-section">
+  <img src="files/images/igors-dubanevics.png" alt="Igors Dubanevics" class="about-image" />
+  
+  <div class="social-links">
+    <a href="https://github.com/igorsdub" class="social-button" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://scholar.google.com/citations?user=yFwC3oIAAAAJ&hl=en" class="social-button" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+    <a href="https://orcid.org/0000-0002-9989-6649" class="social-button" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="ai ai-orcid"></i></a>
+    <a href="https://www.linkedin.com/in/igorsdub/" class="social-button" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+
+  <div class="experience-section">
+    <div class="experience-header">Experience</div>
+    
+    <div class="experience-item">
+      <div class="experience-years">2021 — PRESENT</div>
+      <div class="experience-role">PhD Candidate in Evolutionary Biology</div>
+      <div class="experience-place">OIST (Okinawa, Japan)</div>
+    </div>
+    
+    <div class="experience-item">
+      <div class="experience-years">PREVIOUS</div>
+      <div class="experience-role">MSc &amp; Research in Protein Dynamics</div>
+      <div class="experience-place">Molecular Evolution &amp; Allostery</div>
+    </div>
+  </div>
+</div>
+
+<div class="bio-content">
+  <p>I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the <a href="https://www.oist.jp/" target="_blank" rel="noopener noreferrer">Okinawa Institute of Science and Technology (OIST)</a>. My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.</p>
+
+  <p>My earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the <a href="teaching.qmd">Good Enough Computing in Science</a> course.</p>
+
+  <p>When away from the cluster and bench, I enjoy exploring books, music, and cinema—curated on <a href="beyond-lab.qmd">Beyond Lab</a>.</p>
+</div>
+
+</div>
+
+<!-- Snapshot Strip: Easily swap or update the 4 image sources below -->
+<div class="snapshot-strip">
+  <div class="snapshot-item">
+    <img src="files/images/placeholder1.JPG" alt="Okinawa snapshot 1" loading="lazy" />
+  </div>
+  <div class="snapshot-item">
+    <img src="files/images/placeholder2.JPG" alt="Okinawa snapshot 2" loading="lazy" />
+  </div>
+  <div class="snapshot-item">
+    <img src="files/images/placeholder3.JPG" alt="Okinawa snapshot 3" loading="lazy" />
+  </div>
+  <div class="snapshot-item">
+    <img src="files/images/placeholder4.jpg" alt="Okinawa snapshot 4" loading="lazy" />
+  </div>
+</div>
