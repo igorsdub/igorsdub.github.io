@@ -4,10 +4,6 @@ Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto 
 
 ## Language
 
-**Snapshot Strip**:
-A compact 4-image row on the homepage displaying personal, academic, or Okinawa snapshots beneath the introductory bio.
-_Avoid_: Carousel, hero banner, photo gallery page
-
 **Personal**:
 The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies.
 _Avoid_: Beyond Lab, hobbies, blog categories, portfolio
