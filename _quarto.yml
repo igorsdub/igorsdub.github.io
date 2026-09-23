@@ -9,6 +9,7 @@ website:
   search: false
   navbar:
     background: light
+    collapse: false
     right:
       - href: research.qmd
         text: Research

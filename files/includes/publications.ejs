@@ -1,0 +1,14 @@
+```{=html}
+<div class="pub-list">
+<% for (const item of items) { %>
+  <div class="pub-item">
+    <a href="<%- item.path %>" class="pub-link" target="_blank" rel="noopener noreferrer">
+      <span class="pub-date"><%= item.date %></span>
+      <div class="pub-title"><%= item.title %></div>
+      <div class="pub-authors"><%- (item.author || '').replace('Igors Dubanevics', '<span class="emphasized-author">Igors Dubanevics</span>') %></div>
+      <div class="pub-journal"><%= item.description %></div>
+    </a>
+  </div>
+<% } %>
+</div>
+```
