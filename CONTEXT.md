@@ -24,6 +24,11 @@ _Avoid_: Book post, book review article
 An entry on the Music shelf rendered with a square (`1:1` vinyl sleeve) artwork aspect ratio, album title, and artist.
 _Avoid_: Tracklist, audio player widget
 
-**Cinema Frame**:
-An entry on the Movies shelf rendered with a horizontal (`16:9` widescreen still or landscape poster) aspect ratio to evoke a screen, alongside film title, director, and year.
-_Avoid_: Vertical movie poster, video embed
+**Profile Column**:
+The left-hand column on the homepage (`index.qmd`), modeled on `gchure.bio/about`, stacking the portrait photo (`280px` rounded frame), circular social handle icons (`GitHub`, `Google Scholar`, `ORCID`, `LinkedIn`), and a compact `Geist Mono` chronological list of academic experience/education.
+_Avoid_: Sidebar widget, full CV page
+
+**Movie Poster**:
+An entry on the Movies shelf rendered with a vertical (`2:3` portrait film poster) aspect ratio, film title, director, and release year.
+_Avoid_: Widescreen video frame, video embed
+
