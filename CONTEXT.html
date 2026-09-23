@@ -32,10 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,20 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-655e27b718686fb76d8c692159305c55.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d8ee101114d0ec8bf6ac9cbc8d4978b5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3e7750deb0023a8164113cff1757e8e7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -115,12 +99,11 @@ https://badge.dimensions.ai/
     <span class="navbar-title">Igors Dubanevics</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
@@ -134,15 +117,8 @@ https://badge.dimensions.ai/
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./beyond-lab.html"> 
-<span class="menu-text">Beyond Lab</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/igorsdub/igorsdub.github.io" target="_blank"> <i class="bi bi-github" role="img" aria-label="Website Source Repository">
-</i> 
-<span class="menu-text"></span></a>
+    <a class="nav-link" href="./personal.html"> 
+<span class="menu-text">Personal</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -167,12 +143,12 @@ https://badge.dimensions.ai/
 <p>Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto and styled after the minimalist centered-column aesthetic of Griffin Chure (<code>gchure.bio</code>) and the stripped-down shelf aesthetic of Brian Hie (<code>brianhie.com/bookshelf</code>).</p>
 <section id="language" class="level2">
 <h2 class="anchored" data-anchor-id="language">Language</h2>
-<p><strong>Snapshot Strip</strong>: A compact 3-to-4 image masonry grid on the homepage (<code>index.qmd</code>) displaying personal, academic, or Okinawa snapshots beneath the introductory bio. <em>Avoid</em>: Carousel, hero banner, photo gallery page</p>
-<p><strong>Beyond Lab</strong>: The single non-academic curation page (<code>beyond-lab.qmd</code>) housing three distinct media shelves: Books, Music, and Movies. <em>Avoid</em>: Hobbies, blog categories, portfolio</p>
-<p><strong>Shelf</strong>: A stripped-down Quarto listing gallery within <code>Beyond Lab</code> dedicated to a single medium, where items sit on thin horizontal hairlines with zero Bootstrap card chrome. <em>Avoid</em>: Card grid, table, carousel</p>
+<p><strong>Snapshot Strip</strong>: A compact 4-image row on the homepage displaying personal, academic, or Okinawa snapshots beneath the introductory bio. <em>Avoid</em>: Carousel, hero banner, photo gallery page</p>
+<p><strong>Personal</strong>: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. <em>Avoid</em>: Beyond Lab, hobbies, blog categories, portfolio</p>
+<p><strong>Shelf</strong>: A stripped-down gallery within <code>Personal</code> dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. <em>Avoid</em>: Card grid, table, carousel</p>
 <p><strong>Standing Book</strong>: An entry on the Books shelf rendered with a vertical (<code>2:3</code> portrait) cover aspect ratio, title, and author. <em>Avoid</em>: Book post, book review article</p>
 <p><strong>Album Square</strong>: An entry on the Music shelf rendered with a square (<code>1:1</code> vinyl sleeve) artwork aspect ratio, album title, and artist. <em>Avoid</em>: Tracklist, audio player widget</p>
-<p><strong>Profile Column</strong>: The left-hand column on the homepage (<code>index.qmd</code>), modeled on <code>gchure.bio/about</code>, stacking the portrait photo (<code>280px</code> rounded frame), circular social handle icons (<code>GitHub</code>, <code>Google Scholar</code>, <code>ORCID</code>, <code>LinkedIn</code>), and a compact <code>Geist Mono</code> chronological list of academic experience/education. <em>Avoid</em>: Sidebar widget, full CV page</p>
+<p><strong>Profile Column</strong>: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. <em>Avoid</em>: Sidebar widget, full CV page</p>
 <p><strong>Movie Poster</strong>: An entry on the Movies shelf rendered with a vertical (<code>2:3</code> portrait film poster) aspect ratio, film title, director, and release year. <em>Avoid</em>: Widescreen video frame, video embed</p>
 
 
@@ -589,15 +565,16 @@ https://badge.dimensions.ai/
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-Igors Dubanevics ©
-<script>document.write(new Date().getFullYear())</script>
-</div>   
+      &nbsp;
+    </div>   
     <div class="nav-footer-center">
-<p>Design inspired by <a href="https://gchure.bio/">Griffin Chure</a> and <a href="https://brianhie.com/bookshelf">Brian Hie</a>. Built with <a href="https://quarto.org">Quarto</a> via <a href="https://github.com/drganghe/quarto-academic-website-template">Dr.&nbsp;Gang He’s template</a>.</p>
+©
+<script>document.write(new Date().getFullYear())</script>
+<p>Igors Dubanevics · Inspired by <a href="https://gchure.bio/">Griffin Chure</a> &amp; <a href="https://brianhie.com/bookshelf">Brian Hie</a> · <a href="https://github.com/igorsdub/igorsdub.github.io">Website Source</a></p>
 </div>
     <div class="nav-footer-right">
-<p><a href="https://github.com/igorsdub/igorsdub.github.io">Website Source</a></p>
-</div>
+      &nbsp;
+    </div>
   </div>
 </footer>
 
