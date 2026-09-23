@@ -1,14 +1,15 @@
 ```{=html}
 <div class="pub-list">
 <% for (const item of items) { %>
-  <div class="pub-item">
-    <a href="<%- item.path %>" class="pub-link" target="_blank" rel="noopener noreferrer">
-      <span class="pub-date"><%= item.date %></span>
-      <div class="pub-title"><%= item.title %></div>
-      <div class="pub-authors"><%- (item.author || '').replace('Igors Dubanevics', '<span class="emphasized-author">Igors Dubanevics</span>') %></div>
-      <div class="pub-journal"><%= item.description %></div>
-    </a>
-  </div>
+<div class="pub-item">
+<a href="<%- item.path %>" class="pub-link" target="_blank" rel="noopener noreferrer">
+<span class="pub-date"><%= item.date %></span>
+<div class="pub-title"><%= item.title %></div>
+<% const authorStr = item.author || ''; const parts = authorStr.split('Igors Dubanevics'); %>
+<div class="pub-authors"><% if (parts.length > 1) { %><%- parts[0] %><span class="emphasized-author">Igors Dubanevics</span><%- parts.slice(1).join('Igors Dubanevics') %><% } else { %><%- authorStr %><% } %></div>
+<div class="pub-journal"><%= item.description %></div>
+</a>
+</div>
 <% } %>
 </div>
 ```
