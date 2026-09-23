@@ -1,5 +1,5 @@
 ---
-title: "Beyond Lab"
+title: "Personal"
 description: "Books, music, and cinema that inspire my thinking beyond the lab."
 listing:
   - id: books-shelf

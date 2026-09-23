@@ -6,27 +6,21 @@ website:
   description: "PhD candidate in evolutionary biology at OIST."
   site-url: "https://igorsdub.github.io"
   repo-url: "https://github.com/igorsdub/igorsdub.github.io"
+  search: false
   navbar:
     background: light
-    left:
+    right:
       - href: research.qmd
         text: Research
       - href: teaching.qmd
         text: Teaching
       - href: blog.qmd
         text: Blog
-      - href: beyond-lab.qmd
-        text: Beyond Lab
-    right:
-      - icon: github
-        href: "https://github.com/igorsdub/igorsdub.github.io"
-        aria-label: "Website Source Repository"
-        target: _blank
+      - href: personal.qmd
+        text: Personal
   page-navigation: false
   page-footer:
-    left: "Igors Dubanevics &copy; <script>document.write(new Date().getFullYear())</script>"
-    center: "Design inspired by [Griffin Chure](https://gchure.bio/) and [Brian Hie](https://brianhie.com/bookshelf). Built with [Quarto](https://quarto.org) via [Dr. Gang He's template](https://github.com/drganghe/quarto-academic-website-template)."
-    right: "[Website Source](https://github.com/igorsdub/igorsdub.github.io)"
+    center: "&copy; <script>document.write(new Date().getFullYear())</script> Igors Dubanevics &middot; Inspired by [Griffin Chure](https://gchure.bio/) &amp; [Brian Hie](https://brianhie.com/bookshelf) &middot; [Website Source](https://github.com/igorsdub/igorsdub.github.io)"
   open-graph: true
   twitter-card: true
 
