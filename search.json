@@ -1,66 +1,10 @@
 [
   {
-    "objectID": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
-    "href": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
-    "title": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults",
+    "objectID": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
+    "href": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
+    "title": "0002. Ultra-Compact 580px Column, 12px Typography Scale, and Non-Collapsing Navbar over Quarto Bootstrap Defaults",
     "section": "",
-    "text": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults\nQuarto’s built-in about: template: trestles and listing: type: grid generate full-width Bootstrap containers and heavy boxed cards that conflict with the minimalist aesthetic of gchure.bio and brianhie.com/bookshelf. We decided to constrain the entire site layout (navbar, main content, and footer) to a single centered column (max-width: 740px) via custom.scss and render the Beyond Lab shelves using a stripped-down custom EJS listing template (files/includes/shelf.ejs) rather than Quarto’s default grid cards. This keeps YAML data authoring simple (books.yml, music.yml, movies.yml) while enforcing clean medium-specific proportions (2:3 Standing Books and Movie Posters, 1:1 Album Squares) with zero visual bloat."
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "I study molecular evolution with a focus on how proteins explore sequence space. My work combines genetic data, data-driven methods, and physics-based models to understand protein fitness landscapes and function. Earlier projects investigated protein dynamics and allostery through elastic network models."
-  },
-  {
-    "objectID": "research.html#selected-papers",
-    "href": "research.html#selected-papers",
-    "title": "Research",
-    "section": "Selected papers",
-    "text": "Selected papers\n\n\n\n\n\nOptimising Elastic Network Models for Protein Dynamics and Allostery: Spatial and Modal Cut-offs and Backbone Stiffness\n\n\nJournal of Molecular Biology, 434(17), 167696.\n\n\n\n\n\nSep 15, 2022\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\n\n\nComputational Analysis of Dynamic Allostery and Control in the SARS-CoV-2 Main Protease\n\n\nJournal of the Royal Society Interface, 18, 20200591.\n\n\n\n\n\nJan 6, 2021\n\n\nIgors Dubanevics and Tom C. B. McLeish\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Posts are coming soon.\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "CONTEXT.html",
-    "href": "CONTEXT.html",
-    "title": "Personal Academic Website (igorsdub.github.io)",
-    "section": "",
-    "text": "Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto and styled after the minimalist centered-column aesthetic of Griffin Chure (gchure.bio) and the stripped-down shelf aesthetic of Brian Hie (brianhie.com/bookshelf).\n\n\nSnapshot Strip: A compact 4-image row on the homepage displaying personal, academic, or Okinawa snapshots beneath the introductory bio. Avoid: Carousel, hero banner, photo gallery page\nPersonal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
-  },
-  {
-    "objectID": "CONTEXT.html#language",
-    "href": "CONTEXT.html#language",
-    "title": "Personal Academic Website (igorsdub.github.io)",
-    "section": "",
-    "text": "Snapshot Strip: A compact 4-image row on the homepage displaying personal, academic, or Okinawa snapshots beneath the introductory bio. Avoid: Carousel, hero banner, photo gallery page\nPersonal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
-  },
-  {
-    "objectID": "teaching.html#good-enough-computing-in-science",
-    "href": "teaching.html#good-enough-computing-in-science",
-    "title": "Teaching",
-    "section": "",
-    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Igors Dubanevics",
-    "section": "",
-    "text": "Experience\n      \n      \n        2021 — PRESENT\n        PhD Candidate in Evolutionary Biology\n        OIST (Okinawa, Japan)\n      \n      \n      \n        PREVIOUS\n        MSc & Research in Protein Dynamics\n        Molecular Evolution & Allostery\n      \n    \n  \n\n  \n    I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.\n\n    My earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the Good Enough Computing in Science course.\n\n    When away from the cluster and bench, I enjoy exploring books, music, and cinema—curated on Personal."
+    "text": "0002. Ultra-Compact 580px Column, 12px Typography Scale, and Non-Collapsing Navbar over Quarto Bootstrap Defaults\nQuarto’s cosmo Bootstrap theme defaults to $font-size-base: 1.1rem (~17.6px), stretches &lt;nav class=\"navbar\"&gt; across 100vw, collapses navigation into a hamburger dropdown below 992px (navbar-expand-lg), and forces .navbar .navbar-container &gt; .navbar-brand-container { margin-right: 0 !important; }. We decided to remain on Quarto while enforcing an ultra-compact 580px centered column across the navbar, content, and footer (border-bottom clipped to .navbar-container), disabling navbar collapsing (collapse: false plus high-specificity flex overrides so the brand stays flush-left and links stay flush-right on one line at all viewport widths), scaling the left Profile Column to 180px, and setting site prose to 12px (0.75rem) with a compact left-bordered publication template on Research."
   },
   {
     "objectID": "plan.html",
@@ -112,10 +56,66 @@
     "text": "Movies\n\n\n\n\n\n\n\n2001: A Space Odyssey\n\n\nStanley Kubrick\n\n\n\n\n\n\n\nBlade Runner 2049\n\n\nDenis Villeneuve\n\n\n\n\n\n\n\nStalker\n\n\nAndrei Tarkovsky\n\n\n\n\n\n\n\nSpirited Away\n\n\nHayao Miyazaki\n\n\n\nNo matching items"
   },
   {
-    "objectID": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
-    "href": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
-    "title": "0002. Neutralize Quarto Bootstrap Typography and Grid Scale Instead of Migrating to Astro",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "0002. Neutralize Quarto Bootstrap Typography and Grid Scale Instead of Migrating to Astro\nQuarto’s cosmo Bootstrap theme defaults to $font-size-base: 1.1rem (~17.6px) and injects multi-column .page-columns CSS Grid rules when page-layout: full is enabled, causing text and container widths to appear inflated compared to gchure.bio’s 15px Astro stylesheet. We decided to remain on Quarto to preserve native .qmd scientific authoring and YAML listings, while explicitly setting $font-size-base: 0.9375rem (15px) in custom.scss, constraining the centered column to max-width: 680px, and wrapping raw HTML components in index.qmd inside explicit {=html} blocks so Pandoc never mistakes indented tags for &lt;pre&gt;&lt;code&gt; blocks."
+    "text": "Posts are coming soon.\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Igors Dubanevics",
+    "section": "",
+    "text": "Experience\n      \n      \n        2021 — PRESENT\n        PhD Candidate in Evolutionary Biology\n        OIST (Okinawa, Japan)\n      \n      \n      \n        PREVIOUS\n        MSc & Research in Protein Dynamics\n        Molecular Evolution & Allostery\n      \n    \n  \n\n  \n    I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.\n\n    My earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the Good Enough Computing in Science course.\n\n    When away from the cluster and bench, I enjoy exploring books, music, and cinema—curated on Personal."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
+  },
+  {
+    "objectID": "teaching.html#good-enough-computing-in-science",
+    "href": "teaching.html#good-enough-computing-in-science",
+    "title": "Teaching",
+    "section": "",
+    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "I study molecular evolution with a focus on how proteins explore sequence space. My work combines genetic data, data-driven methods, and physics-based models to understand protein fitness landscapes and function. Earlier projects investigated protein dynamics and allostery through elastic network models."
+  },
+  {
+    "objectID": "research.html#selected-papers",
+    "href": "research.html#selected-papers",
+    "title": "Research",
+    "section": "Selected papers",
+    "text": "Selected papers\n\n\n\n\n\nSep 15, 2022\nOptimising Elastic Network Models for Protein Dynamics and Allostery: Spatial and Modal Cut-offs and Backbone Stiffness\n\nIgors Dubanevics and Tom C. B. McLeish\nJournal of Molecular Biology, 434(17), 167696.\n\n\n\n\n\nJan 6, 2021\nComputational Analysis of Dynamic Allostery and Control in the SARS-CoV-2 Main Protease\n\nIgors Dubanevics and Tom C. B. McLeish\nJournal of the Royal Society Interface, 18, 20200591.\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
+    "href": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
+    "title": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults",
+    "section": "",
+    "text": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults\nQuarto’s built-in about: template: trestles and listing: type: grid generate full-width Bootstrap containers and heavy boxed cards that conflict with the minimalist aesthetic of gchure.bio and brianhie.com/bookshelf. We decided to constrain the entire site layout (navbar, main content, and footer) to a single centered column (max-width: 740px) via custom.scss and render the Beyond Lab shelves using a stripped-down custom EJS listing template (files/includes/shelf.ejs) rather than Quarto’s default grid cards. This keeps YAML data authoring simple (books.yml, music.yml, movies.yml) while enforcing clean medium-specific proportions (2:3 Standing Books and Movie Posters, 1:1 Album Squares) with zero visual bloat."
+  },
+  {
+    "objectID": "CONTEXT.html",
+    "href": "CONTEXT.html",
+    "title": "Personal Academic Website (igorsdub.github.io)",
+    "section": "",
+    "text": "Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto and styled after the minimalist centered-column aesthetic of Griffin Chure (gchure.bio) and the stripped-down shelf aesthetic of Brian Hie (brianhie.com/bookshelf).\n\n\nPersonal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
+  },
+  {
+    "objectID": "CONTEXT.html#language",
+    "href": "CONTEXT.html#language",
+    "title": "Personal Academic Website (igorsdub.github.io)",
+    "section": "",
+    "text": "Personal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
   }
 ]
