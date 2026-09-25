@@ -135,10 +135,10 @@ https://badge.dimensions.ai/
 
 <section id="website-redesign-plan-gchure.bio-brianhie.com" class="level1">
 <h1>Website Redesign Plan (<code>gchure.bio</code> × <code>brianhie.com</code>)</h1>
-<p><em>References: <a href="https://github.com/igorsdub/igorsdub.github.io/issues/1">GitHub Issue #1</a>, <a href="https://github.com/igorsdub/igorsdub.github.io/issues/2">GitHub Issue #2</a></em></p>
+<p><em>References: <a href="https://github.com/igorsdub/igorsdub.github.io/issues/1">GitHub Issue #1</a>, <a href="https://github.com/igorsdub/igorsdub.github.io/issues/2">GitHub Issue #2</a>, <a href="https://github.com/igorsdub/igorsdub.github.io/issues/3">GitHub Issue #3</a></em></p>
 <section id="vision-architecture" class="level2">
 <h2 class="anchored" data-anchor-id="vision-architecture">Vision &amp; Architecture</h2>
-<p>Transform the personal academic website of <strong>Igors Dubanevics</strong> into a clean, minimalist, human-centered portfolio inspired by: - <strong><a href="https://gchure.bio/">Griffin Chure (<code>gchure.bio</code>)</a></strong>: Centered narrow column (<code>max-width: 680px</code>), crisp monochrome typography (<code>Geist</code> / <code>Geist Mono</code>), left profile column with photo, circular social links, and experience list, paired with an evocative 4-photo snapshot strip. - <strong><a href="https://brianhie.com/bookshelf">Brian Hie (<code>brianhie.com/bookshelf</code>)</a></strong>: Stripped-down aesthetic shelves displaying personal culture (books, music, movies) using a clean 4-column hairline grid. - <strong><a href="https://github.com/drganghe/quarto-academic-website-template">Dr.&nbsp;Gang He’s Quarto Academic Template</a></strong>: Solid academic foundation with structured listings, publications, and teaching entries.</p>
+<p>Transform the personal academic website of <strong>Igors Dubanevics</strong> into a clean, minimalist, human-centered portfolio inspired by: - <strong><a href="https://gchure.bio/">Griffin Chure (<code>gchure.bio</code>)</a></strong>: Centered narrow column (<code>max-width: 580px</code>), crisp monochrome typography (<code>Geist</code> / <code>Geist Mono</code> at <code>12px</code> ultra-compact scale), and a <code>180px</code> left profile column with photo, circular social links, and experience list. - <strong><a href="https://brianhie.com/bookshelf">Brian Hie (<code>brianhie.com/bookshelf</code>)</a></strong>: Stripped-down aesthetic shelves displaying personal culture (books, music, movies) using a clean 4-column hairline grid. - <strong><a href="https://github.com/drganghe/quarto-academic-website-template">Dr.&nbsp;Gang He’s Quarto Academic Template</a></strong>: Solid academic foundation with structured listings, publications, and teaching entries.</p>
 <hr>
 </section>
 <section id="roadmap-milestones" class="level2">
@@ -188,6 +188,14 @@ https://badge.dimensions.ai/
 <li>Right-align navbar links (<code>Research</code>, <code>Teaching</code>, <code>Blog</code>, <code>Personal</code>), disable search bar (<code>search: false</code>), and implement an ultra-minimal single-line centered footer with project source link.</li>
 <li>Align typography and container scale to <code>gchure.bio</code>: base font size 15px (<code>$font-size-base: 0.9375rem;</code>), container width constrained to 680px, monospace uppercase navbar and headings, justified bio text, and compact experience items.</li>
 <li>Verify complete site build via <code>quarto render</code>.</li>
+</ul></li>
+<li><label><input type="checkbox" checked=""><strong>Phase 8: Ultra-Compact 580px Scale, Always-Inline Navbar &amp; Page-Jump Locks (Issue #3)</strong></label>
+<ul>
+<li>Constrain <code>.navbar-container</code>, <code>#quarto-content</code>, and <code>.nav-footer</code> (including navbar and footer hairlines) to <code>max-width: 580px</code>.</li>
+<li>Reduce site prose to <code>12px</code> (<code>0.75rem</code>), left <code>Profile Column</code> to <code>180px</code> (<code>28px</code> social buttons), and replace Quarto’s default Research listing with a compact single-column EJS template (<code>files/includes/publications.ejs</code>).</li>
+<li>Disable navbar collapsing (<code>collapse: false</code> in <code>_quarto.yml</code> + flex overrides in <code>custom.scss</code>) so <code>Igors Dubanevics</code> stays flush-left and <code>Research · Teaching · Blog · Personal</code> stay flush-right on a single line at all screen sizes with zero dropdowns.</li>
+<li>Remove <code>Snapshot Strip</code> from <code>index.qmd</code>, <code>custom.scss</code>, and <code>CONTEXT.md</code>.</li>
+<li>Eliminate horizontal/vertical page-switch jumps (<code>scrollbar-gutter: stable; overflow-y: scroll</code> + fixed <code>46px</code> header/body offset) and neutralize <code>quarto-nav.js</code>’s <code>100vh</code> inline <code>min-height</code> so the footer is visible without scrolling.</li>
 </ul></li>
 </ul>
 
