@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
-    "href": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
-    "title": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults",
-    "section": "",
-    "text": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults\nQuarto’s built-in about: template: trestles and listing: type: grid generate full-width Bootstrap containers and heavy boxed cards that conflict with the minimalist aesthetic of gchure.bio and brianhie.com/bookshelf. We decided to constrain the entire site layout (navbar, main content, and footer) to a single centered column (max-width: 740px) via custom.scss and render the Beyond Lab shelves using a stripped-down custom EJS listing template (files/includes/shelf.ejs) rather than Quarto’s default grid cards. This keeps YAML data authoring simple (books.yml, music.yml, movies.yml) while enforcing clean medium-specific proportions (2:3 Standing Books and Movie Posters, 1:1 Album Squares) with zero visual bloat."
-  },
-  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -19,48 +12,6 @@
     "title": "Research",
     "section": "Selected papers",
     "text": "Selected papers\n\n\n\n\n\nSep 15, 2022\nOptimising Elastic Network Models for Protein Dynamics and Allostery: Spatial and Modal Cut-offs and Backbone Stiffness\n\nIgors Dubanevics and Tom C. B. McLeish\nJournal of Molecular Biology, 434(17), 167696.\n\n\n\n\n\nJan 6, 2021\nComputational Analysis of Dynamic Allostery and Control in the SARS-CoV-2 Main Protease\n\nIgors Dubanevics and Tom C. B. McLeish\nJournal of the Royal Society Interface, 18, 20200591.\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Posts are coming soon.\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "CONTEXT.html",
-    "href": "CONTEXT.html",
-    "title": "Personal Academic Website (igorsdub.github.io)",
-    "section": "",
-    "text": "Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto and styled after the minimalist centered-column aesthetic of Griffin Chure (gchure.bio) and the stripped-down shelf aesthetic of Brian Hie (brianhie.com/bookshelf).\n\n\nPersonal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
-  },
-  {
-    "objectID": "CONTEXT.html#language",
-    "href": "CONTEXT.html#language",
-    "title": "Personal Academic Website (igorsdub.github.io)",
-    "section": "",
-    "text": "Personal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
-  },
-  {
-    "objectID": "teaching.html#good-enough-computing-in-science",
-    "href": "teaching.html#good-enough-computing-in-science",
-    "title": "Teaching",
-    "section": "",
-    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Igors Dubanevics",
-    "section": "",
-    "text": "Experience\n      \n      \n        2021 — PRESENT\n        PhD Candidate in Evolutionary Biology\n        OIST (Okinawa, Japan)\n      \n      \n      \n        PREVIOUS\n        MSc & Research in Protein Dynamics\n        Molecular Evolution & Allostery\n      \n    \n  \n\n  \n    I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.\n\n    My earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the Good Enough Computing in Science course.\n\n    When away from the cluster and bench, I enjoy exploring books, music, and cinema—curated on Personal."
   },
   {
     "objectID": "plan.html",
@@ -84,6 +35,55 @@
     "text": "Phase 1: Implementation Planning & Issue #1 Specification\n\nEstablish design requirements: 740px container, Geist typography, clean navigation, profile column, and multi-media shelf.\n\nPhase 2: Configuration & Workflow Updates\n\nUpdate _quarto.yml: remove duplicate brand title, streamline navbar right to GitHub source repository, add Beyond Lab nav item, update footer attribution and HTML theme (cosmo + custom.scss).\nUpdate .github/workflows/publish.yml: set tinytex: false for ultra-fast GitHub Pages deployments.\n\nPhase 3: Minimalist Styling System (custom.scss & styles.css)\n\nDefine SCSS defaults: Geist + Geist Mono font imports, typography variables, monochrome color palette.\nConstrain .navbar-container, #quarto-content, and .nav-footer to max-width: 740px.\nImplement .about-grid, .profile-section, .social-button, and .experience-section styles.\nImplement .snapshot-strip 4-image grid below the homepage bio.\nImplement .shelf-grid, .shelf-cell, and .shelf-cover-wrap with aspect ratios (2:3 for books/movies, 1:1 for music).\nScope title block suppression so only index.qmd hides the header block while subpages display clean page titles.\n\nPhase 4: Homepage Profile & Snapshot Redesign (index.qmd)\n\nReplace Trestles about layout with custom two-column .about-grid.\nLeft column: Portrait image, circular social icons (GitHub, Google Scholar, ORCID, LinkedIn), and education/experience timeline.\nRight column: Bio narrative detailing research in molecular evolution, fitness landscapes, and scientific computing.\nBottom: Responsive 4-photo snapshot strip.\n\nPhase 5: Beyond Lab Media Shelves (beyond-lab.qmd)\n\nCustom EJS listing template (files/includes/shelf.ejs).\nLocal artwork covers in files/images/shelf/ to guarantee zero broken external links.\nStructured YAML data files: data/books.yml, data/music.yml, and data/movies.yml.\nCurated initial items across literature, science, cinema, and music.\n\nPhase 6: Verification & Polish\n\nRender full site with quarto render and verify build status.\nInspect responsiveness and layout integrity.\n\nPhase 7: Layout & Navbar Refinements (Issue #2)\n\nRename beyond-lab.qmd to personal.qmd and update navigation and page titles.\nFix homepage HTML rendering by wrapping index.qmd markup inside a raw {=html} block and removing page-layout: full, eliminating rogue &lt;pre&gt;&lt;code&gt; code wrappers around .social-links, .experience-section, and .snapshot-strip.\nRight-align navbar links (Research, Teaching, Blog, Personal), disable search bar (search: false), and implement an ultra-minimal single-line centered footer with project source link.\nAlign typography and container scale to gchure.bio: base font size 15px ($font-size-base: 0.9375rem;), container width constrained to 680px, monospace uppercase navbar and headings, justified bio text, and compact experience items.\nVerify complete site build via quarto render.\n\nPhase 8: Ultra-Compact 580px Scale, Always-Inline Navbar & Page-Jump Locks (Issue #3)\n\nConstrain .navbar-container, #quarto-content, and .nav-footer (including navbar and footer hairlines) to max-width: 580px.\nReduce site prose to 12px (0.75rem), left Profile Column to 180px (28px social buttons), and replace Quarto’s default Research listing with a compact single-column EJS template (files/includes/publications.ejs).\nDisable navbar collapsing (collapse: false in _quarto.yml + flex overrides in custom.scss) so Igors Dubanevics stays flush-left and Research · Teaching · Blog · Personal stay flush-right on a single line at all screen sizes with zero dropdowns.\nRemove Snapshot Strip from index.qmd, custom.scss, and CONTEXT.md.\nEliminate horizontal/vertical page-switch jumps (scrollbar-gutter: stable; overflow-y: scroll + fixed 46px header/body offset) and neutralize quarto-nav.js’s 100vh inline min-height so the footer is visible without scrolling."
   },
   {
+    "objectID": "CONTEXT.html",
+    "href": "CONTEXT.html",
+    "title": "Personal Academic Website (igorsdub.github.io)",
+    "section": "",
+    "text": "Personal academic and cultural portfolio of Igors Dubanevics, built with Quarto and styled after the minimalist centered-column aesthetic of Griffin Chure (gchure.bio) and the stripped-down shelf aesthetic of Brian Hie (brianhie.com/bookshelf).\n\n\nPersonal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
+  },
+  {
+    "objectID": "CONTEXT.html#language",
+    "href": "CONTEXT.html#language",
+    "title": "Personal Academic Website (igorsdub.github.io)",
+    "section": "",
+    "text": "Personal: The single non-academic curation page housing three distinct media shelves: Books, Music, and Movies. Avoid: Beyond Lab, hobbies, blog categories, portfolio\nShelf: A stripped-down gallery within Personal dedicated to a single medium, where items sit on thin horizontal hairlines with zero card chrome. Avoid: Card grid, table, carousel\nStanding Book: An entry on the Books shelf rendered with a vertical (2:3 portrait) cover aspect ratio, title, and author. Avoid: Book post, book review article\nAlbum Square: An entry on the Music shelf rendered with a square (1:1 vinyl sleeve) artwork aspect ratio, album title, and artist. Avoid: Tracklist, audio player widget\nProfile Column: The left-hand column on the homepage stacking the portrait photo, circular social handle icons, and a compact chronological list of academic experience and education. Avoid: Sidebar widget, full CV page\nMovie Poster: An entry on the Movies shelf rendered with a vertical (2:3 portrait film poster) aspect ratio, film title, director, and release year. Avoid: Widescreen video frame, video embed"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Posts are coming soon.\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
+  },
+  {
+    "objectID": "teaching.html#good-enough-computing-in-science",
+    "href": "teaching.html#good-enough-computing-in-science",
+    "title": "Teaching",
+    "section": "",
+    "text": "Good Enough Computing in Science (GECS) is a four-session mini-course for researchers who want to spend less time fighting their computing environment and more time doing science.\nThe course introduces practical, language-agnostic software-development habits for research projects, using Python examples. Topics include version control and project structure, virtual environments, automation, and testing.\nVisit the GECS course website →"
+  },
+  {
+    "objectID": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
+    "href": "docs/adr/0001-narrow-centered-column-and-ejs-shelves.html",
+    "title": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults",
+    "section": "",
+    "text": "0001. Narrow Centered Column and Custom EJS Shelves over Quarto Bootstrap Defaults\nQuarto’s built-in about: template: trestles and listing: type: grid generate full-width Bootstrap containers and heavy boxed cards that conflict with the minimalist aesthetic of gchure.bio and brianhie.com/bookshelf. We decided to constrain the entire site layout (navbar, main content, and footer) to a single centered column (max-width: 740px) via custom.scss and render the Beyond Lab shelves using a stripped-down custom EJS listing template (files/includes/shelf.ejs) rather than Quarto’s default grid cards. This keeps YAML data authoring simple (books.yml, music.yml, movies.yml) while enforcing clean medium-specific proportions (2:3 Standing Books and Movie Posters, 1:1 Album Squares) with zero visual bloat."
+  },
+  {
+    "objectID": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
+    "href": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
+    "title": "0002. Ultra-Compact 580px Column, 12px Typography Scale, Zero-Scroll Footer, and Page-Jump Locks over Quarto Defaults",
+    "section": "",
+    "text": "0002. Ultra-Compact 580px Column, 12px Typography Scale, Zero-Scroll Footer, and Page-Jump Locks over Quarto Defaults\nQuarto’s default Bootstrap styling and runtime scripts introduce several layout behaviors that conflict with our minimalist, stable single-column design: $font-size-base: 1.1rem (~17.6px), a navbar stretched across 100vw that collapses into a hamburger menu below 992px, dynamic runtime script shifts where quarto-nav.js recalculates body.style.paddingTop ~250ms after page load, and an inline min-height: calc(100vh - ...) calculation on #quarto-content that pushes footers off-screen and forces unnecessary vertical scrolling on short pages. Additionally, switching between short pages and longer pages (such as Personal) toggles vertical scrollbars, inducing horizontal layout jumps.\nWe decided to enforce: 1. An ultra-compact centered 580px layout column across the navbar, main content, and footer (.navbar-container, #quarto-content, .nav-footer). 2. An always-inline, single-line non-collapsing navbar (collapse: false and flex overrides) locked at an exact 46px height. 3. An ultra-compact 12px (0.75rem) typography scale ($font-size-base: 0.75rem, body { font-size: 12px !important; line-height: 1.5; }) with a proportional 180px left profile column on the homepage. 4. Neutralization of Quarto’s 100vh + margin scroll bug by overriding #quarto-content to min-height: 0 !important; height: auto !important; with compact footer spacing (margin-top: 1.75rem !important; padding-top: 1.15rem !important; padding-bottom: 1.25rem !important; font-size: 0.6rem;), ensuring the footer is visible without scrolling on standard desktop viewports. 5. Strict CSS layout locks to prevent horizontal and vertical page-switch jumps: html { scrollbar-gutter: stable; overflow-y: scroll; } to preserve horizontal alignment across all pages, and fixed 46px header height / body { padding-top: 46px !important; } so Quarto’s delayed padding adjustment cannot shift content vertically."
+  },
+  {
     "objectID": "personal.html",
     "href": "personal.html",
     "title": "Personal",
@@ -95,7 +95,7 @@
     "href": "personal.html#books",
     "title": "Personal",
     "section": "Books",
-    "text": "Books\n\n\n\n\n\n\n\nThe Selfish Gene\n\n\nRichard Dawkins\n\n\n\n\n\n\n\nGödel, Escher, Bach\n\n\nDouglas Hofstadter\n\n\n\n\n\n\n\nSICP\n\n\nAbelson & Sussman\n\n\n\n\n\n\n\nDune\n\n\nFrank Herbert\n\n\n\nNo matching items"
+    "text": "Books\n\nEvolutionary Biology\n\n\n\n\n\n\n\nThe Gene\n\n\nSiddhartha Mukherjee\n\n\n\n\n\n\n\nThe Selfish Gene\n\n\nRichard Dawkins\n\n\n\n\n\n\n\nThe Extended Phenotype\n\n\nRichard Dawkins\n\n\n\n\n\n\n\nThe Red Queen\n\n\nMatt Ridley\n\n\n\n\n\n\n\nThe Mating Mind\n\n\nGeoffrey Miller\n\n\n\nNo matching items\n\n\n\nGeneral Science & Mathematics\n\n\n\n\n\n\n\nThinking, Fast and Slow\n\n\nDaniel Kahneman\n\n\n\n\n\n\n\nThe Joy of X\n\n\nSteven Strogatz\n\n\n\n\n\n\n\nAlex’s Adventures in Numberland\n\n\nAlex Bellos\n\n\n\n\n\n\n\nThe Pattern Seekers\n\n\nSimon Baron-Cohen\n\n\n\n\n\n\n\nChaos: Making a New Science\n\n\nJames Gleick\n\n\n\n\n\n\n\nSurely You’re Joking, Mr. Feynman!\n\n\nRichard Feynman\n\n\n\nNo matching items\n\n\n\nOxford Very Short Introductions\n\n\n\n\n\n\n\nGame Theory\n\n\nKen Binmore\n\n\n\n\n\n\n\nStatistics\n\n\nDavid J. Hand\n\n\n\n\n\n\n\nMathematics\n\n\nTimothy Gowers\n\n\n\n\n\n\n\nEvolution\n\n\nBrian & Deborah Charlesworth\n\n\n\n\n\n\n\nChaos\n\n\nLeonard Smith\n\n\n\n\n\n\n\nDreaming\n\n\nJ. Allan Hobson\n\n\n\n\n\n\n\nFreud\n\n\nAnthony Storr\n\n\n\nNo matching items\n\n\n\nTextbooks\n\n\n\n\n\n\n\nInformation Theory, Inference and Learning Algorithms\n\n\nDavid MacKay\n\n\n\n\n\n\n\nNonlinear Dynamics and Chaos\n\n\nSteven Strogatz\n\n\n\n\n\n\n\nStatistics\n\n\nDavid Freedman\n\n\n\nNo matching items"
   },
   {
     "objectID": "personal.html#music",
@@ -112,10 +112,24 @@
     "text": "Movies\n\n\n\n\n\n\n\n2001: A Space Odyssey\n\n\nStanley Kubrick\n\n\n\n\n\n\n\nBlade Runner 2049\n\n\nDenis Villeneuve\n\n\n\n\n\n\n\nStalker\n\n\nAndrei Tarkovsky\n\n\n\n\n\n\n\nSpirited Away\n\n\nHayao Miyazaki\n\n\n\nNo matching items"
   },
   {
-    "objectID": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
-    "href": "docs/adr/0002-neutralize-quarto-bootstrap-scale.html",
-    "title": "0002. Ultra-Compact 580px Column, 12px Typography Scale, Zero-Scroll Footer, and Page-Jump Locks over Quarto Defaults",
+    "objectID": "GLOSSARY.html",
+    "href": "GLOSSARY.html",
+    "title": "Personal Shelf",
     "section": "",
-    "text": "0002. Ultra-Compact 580px Column, 12px Typography Scale, Zero-Scroll Footer, and Page-Jump Locks over Quarto Defaults\nQuarto’s default Bootstrap styling and runtime scripts introduce several layout behaviors that conflict with our minimalist, stable single-column design: $font-size-base: 1.1rem (~17.6px), a navbar stretched across 100vw that collapses into a hamburger menu below 992px, dynamic runtime script shifts where quarto-nav.js recalculates body.style.paddingTop ~250ms after page load, and an inline min-height: calc(100vh - ...) calculation on #quarto-content that pushes footers off-screen and forces unnecessary vertical scrolling on short pages. Additionally, switching between short pages and longer pages (such as Personal) toggles vertical scrollbars, inducing horizontal layout jumps.\nWe decided to enforce: 1. An ultra-compact centered 580px layout column across the navbar, main content, and footer (.navbar-container, #quarto-content, .nav-footer). 2. An always-inline, single-line non-collapsing navbar (collapse: false and flex overrides) locked at an exact 46px height. 3. An ultra-compact 12px (0.75rem) typography scale ($font-size-base: 0.75rem, body { font-size: 12px !important; line-height: 1.5; }) with a proportional 180px left profile column on the homepage. 4. Neutralization of Quarto’s 100vh + margin scroll bug by overriding #quarto-content to min-height: 0 !important; height: auto !important; with compact footer spacing (margin-top: 1.75rem !important; padding-top: 1.15rem !important; padding-bottom: 1.25rem !important; font-size: 0.6rem;), ensuring the footer is visible without scrolling on standard desktop viewports. 5. Strict CSS layout locks to prevent horizontal and vertical page-switch jumps: html { scrollbar-gutter: stable; overflow-y: scroll; } to preserve horizontal alignment across all pages, and fixed 46px header height / body { padding-top: 46px !important; } so Quarto’s delayed padding adjustment cannot shift content vertically."
+    "text": "Domain language for the curated media gallery and bibliographic catalogue on the personal website.\n\n\nShelf: A curated grid of cultural media items (books, music, or films) rendered visually on the personal page. Avoid: Gallery, media board, catalog page, listicle\nSub-shelf: A thematic subdivision within a top-level media shelf grouping items by discipline or format. Avoid: Category, sub-gallery, section, collection, bucket\nCurator Note: A concise one-sentence reflection on a media item presented as an interactive tooltip annotation. Avoid: Review, synopsis, blurb, summary, description\nMaster Reference Catalogue: The definitive reference document in the data directory recording full bibliographic citations, editions, image provenance, and annotations for all catalogued items. Avoid: Bibliography, inventory list, source sheet, index"
+  },
+  {
+    "objectID": "GLOSSARY.html#language",
+    "href": "GLOSSARY.html#language",
+    "title": "Personal Shelf",
+    "section": "",
+    "text": "Shelf: A curated grid of cultural media items (books, music, or films) rendered visually on the personal page. Avoid: Gallery, media board, catalog page, listicle\nSub-shelf: A thematic subdivision within a top-level media shelf grouping items by discipline or format. Avoid: Category, sub-gallery, section, collection, bucket\nCurator Note: A concise one-sentence reflection on a media item presented as an interactive tooltip annotation. Avoid: Review, synopsis, blurb, summary, description\nMaster Reference Catalogue: The definitive reference document in the data directory recording full bibliographic citations, editions, image provenance, and annotations for all catalogued items. Avoid: Bibliography, inventory list, source sheet, index"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Igors Dubanevics",
+    "section": "",
+    "text": "Experience\n      \n      \n        2021 — PRESENT\n        PhD Candidate in Evolutionary Biology\n        OIST (Okinawa, Japan)\n      \n      \n      \n        PREVIOUS\n        MSc & Research in Protein Dynamics\n        Molecular Evolution & Allostery\n      \n    \n  \n\n  \n    I am a PhD candidate in the Evolutionary and Synthetic Biology Unit at the Okinawa Institute of Science and Technology (OIST). My research explores molecular evolution and the evolutionary and artificial exploration of protein sequence space. I study protein fitness landscapes by combining genetic data with data-driven and physics-based models.\n\n    My earlier work focused on protein dynamics and allostery, including elastic-network models of the SARS-CoV-2 main protease. I also teach practical, reproducible computing practices for researchers through the Good Enough Computing in Science course.\n\n    When away from the cluster and bench, I enjoy exploring books, music, and cinema—curated on Personal."
   }
 ]

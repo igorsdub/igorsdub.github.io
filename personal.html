@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-655e27b718686fb76d8c692159305c55.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-463711cd70f328679a6e9b96e371144e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-026beb70b185c3f083be1ce6fc278a38.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-39cd97cb2fd5b01bfde0afc545f54a99.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-books-shelf .list');
+    const listingTargetEl = window.document.querySelector('#listing-books-evolutionary-biology .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -76,7 +76,91 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-books-shelf'] = new List('listing-books-shelf', options);
+    window['quarto-listings']['listing-books-evolutionary-biology'] = new List('listing-books-evolutionary-biology', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-books-general-science .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-creator','listing-image','listing-medium_class','listing-note',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-creator","listing-image","listing-medium_class","listing-note"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-books-general-science'] = new List('listing-books-general-science', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-books-vsi .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-creator','listing-image','listing-medium_class','listing-note',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-creator","listing-image","listing-medium_class","listing-note"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-books-vsi'] = new List('listing-books-vsi', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-books-textbooks .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-creator','listing-image','listing-medium_class','listing-note',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-creator","listing-image","listing-medium_class","listing-note"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-books-textbooks'] = new List('listing-books-textbooks', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -278,11 +362,24 @@ window.Quarto = {
 <p>A curated collection of books, albums, and cinema that inspire my curiosity, inform my perspective, and accompany life beyond the research bench and computing cluster.</p>
 <section id="books" class="level2">
 <h2 class="anchored" data-anchor-id="books">Books</h2>
-<div id="listing-books-shelf" class="quarto-listing quarto-listing-container-custom">
+<section id="evolutionary-biology" class="level3">
+<h3 class="anchored" data-anchor-id="evolutionary-biology">Evolutionary Biology</h3>
+<div id="listing-books-evolutionary-biology" class="quarto-listing quarto-listing-container-custom">
 <div class="shelf-grid">
-<div class="shelf-cell shelf-book" title="A foundational text on the gene-centric view of evolution and replicator dynamics.">
+<div class="shelf-cell shelf-book" title="A panoramic history of genetics from Mendel to modern gene editing and human heredity.">
 <div class="shelf-cover-wrap">
-<img src="files/images/shelf/book-selfish-gene.svg" alt="The Selfish Gene" loading="lazy">
+<img src="files/images/shelf/book-the-gene.jpg" alt="The Gene" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+The Gene
+</h4>
+<p class="shelf-creator">
+Siddhartha Mukherjee
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="The foundational work articulating the gene-centric view of evolution and replicator dynamics.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-the-selfish-gene.jpg" alt="The Selfish Gene" loading="lazy">
 </div>
 <h4 class="shelf-title anchored">
 The Selfish Gene
@@ -291,42 +388,243 @@ The Selfish Gene
 Richard Dawkins
 </p>
 </div>
-<div class="shelf-cell shelf-book" title="An exhilarating exploration of recursion, formal systems, self-reference, and cognition.">
+<div class="shelf-cell shelf-book" title="Dawkins's masterwork demonstrating that phenotypic gene expression extends outward into the environment.">
 <div class="shelf-cover-wrap">
-<img src="files/images/shelf/book-geb.svg" alt="Gödel, Escher, Bach" loading="lazy">
+<img src="files/images/shelf/book-the-extended-phenotype.jpg" alt="The Extended Phenotype" loading="lazy">
 </div>
 <h4 class="shelf-title anchored">
-Gödel, Escher, Bach
+The Extended Phenotype
 </h4>
 <p class="shelf-creator">
-Douglas Hofstadter
+Richard Dawkins
 </p>
 </div>
-<div class="shelf-cell shelf-book" title="Structure and Interpretation of Computer Programs; programming as conceptual abstractions.">
+<div class="shelf-cell shelf-book" title="An investigation into sexual reproduction and the co-evolutionary arms race between species.">
 <div class="shelf-cover-wrap">
-<img src="files/images/shelf/book-sicp.svg" alt="SICP" loading="lazy">
+<img src="files/images/shelf/book-the-red-queen.jpg" alt="The Red Queen" loading="lazy">
 </div>
 <h4 class="shelf-title anchored">
-SICP
+The Red Queen
 </h4>
 <p class="shelf-creator">
-Abelson &amp; Sussman
+Matt Ridley
 </p>
 </div>
-<div class="shelf-cell shelf-book" title="A masterwork of ecological systems, politics, and evolutionary pressure on human civilization.">
+<div class="shelf-cell shelf-book" title="A thesis proposing human intelligence, humor, and art evolved through sexual selection as courtship adaptations.">
 <div class="shelf-cover-wrap">
-<img src="files/images/shelf/book-dune.svg" alt="Dune" loading="lazy">
+<img src="files/images/shelf/book-the-mating-mind.jpg" alt="The Mating Mind" loading="lazy">
 </div>
 <h4 class="shelf-title anchored">
-Dune
+The Mating Mind
 </h4>
 <p class="shelf-creator">
-Frank Herbert
+Geoffrey Miller
 </p>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+</section>
+<section id="general-science-mathematics" class="level3">
+<h3 class="anchored" data-anchor-id="general-science-mathematics">General Science &amp; Mathematics</h3>
+<div id="listing-books-general-science" class="quarto-listing quarto-listing-container-custom">
+<div class="shelf-grid">
+<div class="shelf-cell shelf-book" title="A landmark distillation of dual-process psychology, heuristics, and systematic cognitive biases.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-thinking-fast-and-slow.jpg" alt="Thinking, Fast and Slow" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Thinking, Fast and Slow
+</h4>
+<p class="shelf-creator">
+Daniel Kahneman
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A warm, intuitive guided tour through the core ideas and universal beauty of mathematics.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-the-joy-of-x.jpg" alt="The Joy of X" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+The Joy of X
+</h4>
+<p class="shelf-creator">
+Steven Strogatz
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A globetrotting exploration of mathematical curiosities, unusual number systems, and geometric intuition.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-alexs-adventures-in-numberland.jpg" alt="Alex's Adventures in Numberland" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Alex’s Adventures in Numberland
+</h4>
+<p class="shelf-creator">
+Alex Bellos
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A theory linking cognitive hyper-systemizing traits to the evolutionary engine of human technological invention.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-the-pattern-seekers.jpg" alt="The Pattern Seekers" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+The Pattern Seekers
+</h4>
+<p class="shelf-creator">
+Simon Baron-Cohen
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="The classic chronicle of the pioneers who uncovered nonlinear dynamics, fractals, and deterministic chaos.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-chaos-making-a-new-science.jpg" alt="Chaos: Making a New Science" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Chaos: Making a New Science
+</h4>
+<p class="shelf-creator">
+James Gleick
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="The irreverent memoirs and adventurous intellectual curiosity of Nobel physicist Richard Feynman.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-surely-youre-joking-mr-feynman.jpg" alt="Surely You're Joking, Mr. Feynman!" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Surely You’re Joking, Mr.&nbsp;Feynman!
+</h4>
+<p class="shelf-creator">
+Richard Feynman
+</p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="oxford-very-short-introductions" class="level3">
+<h3 class="anchored" data-anchor-id="oxford-very-short-introductions">Oxford Very Short Introductions</h3>
+<div id="listing-books-vsi" class="quarto-listing quarto-listing-container-custom">
+<div class="shelf-grid">
+<div class="shelf-cell shelf-book" title="A rigorous yet accessible primer on strategic decision-making, equilibria, and interactive rationality.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-vsi-game-theory.jpg" alt="Game Theory" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Game Theory
+</h4>
+<p class="shelf-creator">
+Ken Binmore
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A concise survey of how statistical thinking transforms uncertain empirical data into reliable conclusions.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-vsi-statistics.jpg" alt="Statistics" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Statistics
+</h4>
+<p class="shelf-creator">
+David J. Hand
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="An insightful exploration into the nature of mathematical abstraction, proof, and structure by a Fields Medalist.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-vsi-mathematics.jpg" alt="Mathematics" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Mathematics
+</h4>
+<p class="shelf-creator">
+Timothy Gowers
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="An authoritative genetic and population-based introduction to evolutionary mechanisms and speciation.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-vsi-evolution.jpg" alt="Evolution" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Evolution
+</h4>
+<p class="shelf-creator">
+Brian &amp; Deborah Charlesworth
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A lucid introduction to nonlinear predictability, strange attractors, and the limits of forecasting.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-vsi-chaos.jpg" alt="Chaos" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Chaos
+</h4>
+<p class="shelf-creator">
+Leonard Smith
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A neurobiological account of REM sleep, brain activations, and the cognitive mechanics of dream generation.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-vsi-dreaming.jpg" alt="Dreaming" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Dreaming
+</h4>
+<p class="shelf-creator">
+J. Allan Hobson
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="A balanced psychological assessment of Sigmund Freud's revolutionary models of the unconscious mind.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-vsi-freud.jpg" alt="Freud" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Freud
+</h4>
+<p class="shelf-creator">
+Anthony Storr
+</p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="textbooks" class="level3">
+<h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
+<div id="listing-books-textbooks" class="quarto-listing quarto-listing-container-custom">
+<div class="shelf-grid">
+<div class="shelf-cell shelf-book" title="A tour de force unifying Shannon information theory, Bayesian inference, and statistical machine learning.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-information-theory-inference-and-learning-algorithms.jpg" alt="Information Theory, Inference and Learning Algorithms" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Information Theory, Inference and Learning Algorithms
+</h4>
+<p class="shelf-creator">
+David MacKay
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="The definitive, visually intuitive introduction to differential equations, bifurcations, and phase space topology.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-nonlinear-dynamics-and-chaos.jpg" alt="Nonlinear Dynamics and Chaos" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Nonlinear Dynamics and Chaos
+</h4>
+<p class="shelf-creator">
+Steven Strogatz
+</p>
+</div>
+<div class="shelf-cell shelf-book" title="An uncompromisingly conceptual, non-formulaic masterclass in statistical reasoning, observational studies, and experimental controls.">
+<div class="shelf-cover-wrap">
+<img src="files/images/shelf/book-statistics-freedman.jpg" alt="Statistics" loading="lazy">
+</div>
+<h4 class="shelf-title anchored">
+Statistics
+</h4>
+<p class="shelf-creator">
+David Freedman
+</p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
 </section>
 <section id="music" class="level2">
 <h2 class="anchored" data-anchor-id="music">Music</h2>
