@@ -2,8 +2,20 @@
 title: "Personal"
 description: "Books, music, and cinema that inspire my thinking beyond the lab."
 listing:
-  - id: books-shelf
-    contents: data/books.yml
+  - id: books-evolutionary-biology
+    contents: data/books-evolutionary-biology.yml
+    template: files/includes/shelf.ejs
+    sort: false
+  - id: books-general-science
+    contents: data/books-general-science.yml
+    template: files/includes/shelf.ejs
+    sort: false
+  - id: books-vsi
+    contents: data/books-vsi.yml
+    template: files/includes/shelf.ejs
+    sort: false
+  - id: books-textbooks
+    contents: data/books-textbooks.yml
     template: files/includes/shelf.ejs
     sort: false
   - id: music-shelf
@@ -21,7 +33,24 @@ A curated collection of books, albums, and cinema that inspire my curiosity, inf
 
 ## Books
 
-:::{#books-shelf}
+### Evolutionary Biology
+
+:::{#books-evolutionary-biology}
+:::
+
+### General Science & Mathematics
+
+:::{#books-general-science}
+:::
+
+### Oxford Very Short Introductions
+
+:::{#books-vsi}
+:::
+
+### Textbooks
+
+:::{#books-textbooks}
 :::
 
 ## Music

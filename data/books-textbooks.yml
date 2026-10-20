@@ -1,0 +1,17 @@
+- title: "Information Theory, Inference and Learning Algorithms"
+  creator: "David MacKay"
+  image: "files/images/shelf/book-information-theory-inference-and-learning-algorithms.jpg"
+  medium_class: "shelf-book"
+  note: "A tour de force unifying Shannon information theory, Bayesian inference, and statistical machine learning."
+
+- title: "Nonlinear Dynamics and Chaos"
+  creator: "Steven Strogatz"
+  image: "files/images/shelf/book-nonlinear-dynamics-and-chaos.jpg"
+  medium_class: "shelf-book"
+  note: "The definitive, visually intuitive introduction to differential equations, bifurcations, and phase space topology."
+
+- title: "Statistics"
+  creator: "David Freedman"
+  image: "files/images/shelf/book-statistics-freedman.jpg"
+  medium_class: "shelf-book"
+  note: "An uncompromisingly conceptual, non-formulaic masterclass in statistical reasoning, observational studies, and experimental controls."
